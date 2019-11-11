@@ -1,0 +1,9 @@
+// Force the flexed content to stay in this container
+// This block inherits the height of its flexed children
+.flex-block {
+  @include clearfix();
+  display: block;
+  position: relative;
+  height: inherit;
+  overflow: hidden;
+}

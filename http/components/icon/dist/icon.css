@@ -1,0 +1,1 @@
+#gradient-vertical{--color-stop-1:#0C7489;--color-stop-2:#0C7489;--color-stop-3:#2E6171}.icon{display:block;height:4rem;width:4rem;margin:auto}.icon__path{fill:#0c7489}@supports (--css:variables){.icon__path{fill:url(#gradient-vertical) #0c7489}}
