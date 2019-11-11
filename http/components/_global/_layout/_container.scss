@@ -1,12 +1,7 @@
 .container {
 
-
   // Horizontal container
   @include contain();
-
-  .paragraph--small-container & {
-    max-width: $small-container;
-  }
 
   // Debugging styling
   @if $enable-debugging == true {
@@ -23,31 +18,6 @@
     @if $enable-debugging == true {
       border-left-width: 0;
       border-right-width: 0;
-    }
-  }
-
-  // The vertical container also gives top & bottom spacing
-  &--vertical {
-    $vertical-paragraph-spacing: 4rem;
-
-    .paragraph--spacing-top &,
-    .maintenance-page & {
-      padding-top: $vertical-paragraph-spacing;
-
-      // Nested containers
-      .container--vertical {
-        padding-top: 0;
-      }
-    }
-
-    .paragraph--spacing-bottom &,
-    .maintenance-page & {
-      padding-bottom: $vertical-paragraph-spacing;
-
-      // Nested containers
-      .container--vertical {
-        padding-bottom: 0;
-      }
     }
   }
 }

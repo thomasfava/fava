@@ -143,27 +143,6 @@ img {
   }
 }
 
-label {
-  display: block;
-}
-
-br,
-ul,
-ol {
-  & + br {
-    display: none; // Cancel out misusage of br-tags
-  }
-}
-
-
-form details {
-  border: none;
-}
-
-select {
-  appearance: none;
-}
-
 input[type="search"] {
   box-sizing: border-box;
 }

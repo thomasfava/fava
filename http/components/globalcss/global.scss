@@ -15,7 +15,8 @@
 @import "../_global/_layout/**/*.scss";
 
 // Import Smacss Components structure
-@import "../_global/_style/**/*.scss";
+@import "../_global/_components/**/*.scss";
+@import "../_global/_scss-partials/**/*.scss";
 @import "../!(_global)/**/*.scss";
 
 // Import Smacss State structure

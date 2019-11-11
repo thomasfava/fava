@@ -26,30 +26,4 @@
   &--secondary.button--ghost {
     @include button-paint("secondary", "ghost");
   }
-
-  // Extra modifications
-  &--icon {
-    position: relative;
-    padding-right: 5.8rem;
-
-    &::after {
-      @include transition(all);
-      display: inline-block;
-      position: absolute;
-      right: 1.4rem;
-      top: 50%;
-    }
-
-    &--chevron {
-      &::after {
-        $icon-size: 0.8rem;
-        content: "";
-        width: $icon-size;
-        height: $icon-size;
-        margin-top: -1/2 * $icon-size;
-        background: url(../images/chevron-right.svg) center no-repeat;
-        background-size: contain;
-      }
-    }
-  }
 }
