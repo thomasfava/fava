@@ -9,13 +9,13 @@
 .fava-logo {
   $logo-width: 500rem;
   $logo-height: 164rem;
-  $logo-factor: 0.057;
+  $logo-factor: 0.059;
 
   display: block;
   width: $logo-width * $logo-factor;
   height: $logo-height * $logo-factor;
   fill: $petrol;
-  margin: 4rem auto 6.4rem;
+  margin: 3.2rem auto 7.2rem;
 
   @supports(--css: variables) {
     fill: url(#fava-gradient) $petrol;
