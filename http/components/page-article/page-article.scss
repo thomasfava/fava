@@ -3,6 +3,16 @@
 .page-article {
   margin-bottom: 4.8rem;
 
+  &__content {
+    > *:first-child {
+      margin-top: 0;
+    }
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   &--intro {
     $article-gutter: 2rem;
 
@@ -32,4 +42,44 @@
 
   &--tools {}
   &--contact {}
+
+
+  ul {
+    list-style: none;
+    padding-left: 1.8rem;
+
+    li {
+      position: relative;
+
+      &::before {
+        content: "";
+        background-color: $petrol;
+        position: absolute;
+        top: 0.66em;
+        left: -1.6rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  ol {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: custom-counter;
+
+    > li {
+      counter-increment: custom-counter;
+      padding-left: 0;
+
+      &::before {
+        @include font-size(h3);
+        content: counter(custom-counter) ". ";
+        display: block;
+        margin-bottom: 0.4rem;
+        color: $petrol;
+      }
+    }
+  }
 }

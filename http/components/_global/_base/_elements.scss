@@ -44,7 +44,7 @@ h5,
 h6 {
   @include font-weight(500);
   line-height: $base-line-height-heading;
-  margin: 0 0 1.2rem;
+  margin: 3.6rem 0 1.2rem;
   color: $petrol;
 
   a {
@@ -60,11 +60,10 @@ h6 {
   em {
     font-style: normal;
   }
-
 }
 
 h1 {
-  @include font-size(h2);
+  @include font-size(h1);
 }
 
 h2 {
