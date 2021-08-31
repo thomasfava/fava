@@ -13,6 +13,10 @@
     }
   }
 
+  &__full {
+    width: 100%;
+  }
+
   &--intro {
     $article-gutter: 2rem;
 
@@ -38,15 +42,29 @@
       flex-grow: 0;
       flex-shrink: 0;
     }
+
+    .page-article__visual--recipe {
+      flex-grow: 1;
+      flex-basis: 28rem;
+      padding-top: 1.2rem;
+
+      > * {
+        object-fit: cover;
+        min-height: 19rem;
+        max-height: 26rem;
+        width: 100%;
+        border-radius: 1.2rem 3.6rem 1.2rem 0;
+        box-shadow: 0.1rem 0.1rem 0.7rem -0.4rem $gray;
+      }
+    }
   }
 
   &--tools {}
   &--contact {}
 
-
   ul {
-    list-style: none;
-    padding-left: 1.8rem;
+  list-style: none;
+  padding-left: 1.8rem;
 
     li {
       position: relative;
