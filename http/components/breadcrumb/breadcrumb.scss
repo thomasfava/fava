@@ -1,0 +1,27 @@
+@import "sass-essentials";
+
+.breadcrumb {
+  margin: 0 0 0.6rem;
+  font-size: $h5-font-size;
+  text-transform: lowercase;
+
+  &__items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &::after {
+      content: " -";
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+  }
+
+  &__link {}
+}

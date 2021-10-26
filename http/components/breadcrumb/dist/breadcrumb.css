@@ -1,0 +1,1 @@
+.breadcrumb{margin:0 0 .6rem;font-size:1.4rem;text-transform:lowercase}.breadcrumb__items{list-style:none;margin:0;padding:0}.breadcrumb__item{display:inline-block}.breadcrumb__item::after{content:" -"}.breadcrumb__item:last-child::after{content:none}
