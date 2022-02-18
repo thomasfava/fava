@@ -1,7 +1,8 @@
 @import "sass-essentials";
 
 .teaser {
-  @include transition(all, slow);
+  @include transition(cosmetic);
+  @include shadow;
 
   position: relative;
   display: flex;
@@ -15,7 +16,7 @@
   }
 
   &__content {
-    padding: 2rem 1.6rem 3.2rem;
+    padding: 1.8rem 2rem 3.2rem;
   }
 
   &__image {
@@ -24,6 +25,10 @@
     overflow: hidden;
     border-top-left-radius: 1.1rem;
     border-top-right-radius: 3.5rem;
+
+    .overview--large & {
+      height: 19rem;
+    }
 
     .overview__item:nth-child(even) & {
       border-top-right-radius: 0;
