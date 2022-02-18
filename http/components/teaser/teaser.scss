@@ -1,0 +1,99 @@
+@import "sass-essentials";
+
+.teaser {
+  @include transition(all, slow);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border: thin solid $lightgray;
+  border-radius: 1.2rem 3.6rem 1.2rem 0;
+
+  .overview__item:nth-child(even) & {
+    border-radius: 1.2rem 0 1.2rem 3.6rem;
+  }
+
+  &__content {
+    padding: 2rem 1.6rem 3.2rem;
+  }
+
+  &__image {
+    order: -1;
+    height: 14rem;
+    overflow: hidden;
+    border-top-left-radius: 1.1rem;
+    border-top-right-radius: 3.5rem;
+
+    .overview__item:nth-child(even) & {
+      border-top-right-radius: 0;
+    }
+
+    img {
+      @include transition(all, slow);
+
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__link {
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      border-radius: 1.2rem 3.6rem 1.2rem 0;
+
+      .overview__item:nth-child(even) & {
+        border-radius: 1.2rem 0 1.2rem 3.6rem;
+      }
+    }
+  }
+
+  &:active,
+  &:focus,
+  &:focus-within,
+  &:hover {
+    border-color: $petrol;
+    background-color: rgba(white, 0.24);
+
+    .teaser__image img {
+      transform: scale(1.04);
+    }
+  }
+
+  &:focus-within,
+  &:focus {
+    box-shadow: 0 0 0.6rem -0.2rem $petrol;
+    &:not(:focus-visible) {
+      background-color: rgba(white, 0.4);
+    }
+  }
+
+  &:focus-within {
+
+    // Focus with a keyboard
+    a:focus-visible {
+      &::before {
+        outline: thin dashed currentColor;
+        outline-offset: 0.6rem;
+      }
+    }
+
+    // Focus with a mouse, touch, or stylus
+    a:focus {
+      &, &:not(:focus-visible)::before {
+        outline: none;
+      }
+    }
+  }
+}
