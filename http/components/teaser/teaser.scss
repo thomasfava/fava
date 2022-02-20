@@ -23,8 +23,15 @@
     order: -1;
     height: 14rem;
     overflow: hidden;
+    border-bottom: thin solid $lightgray;
     border-top-left-radius: 1.1rem;
     border-top-right-radius: 3.5rem;
+
+    .teaser--sound & {
+      position: relative;
+      height: 0;
+      padding-bottom: 100%;
+    }
 
     .overview--large & {
       height: 19rem;
@@ -40,10 +47,16 @@
       object-fit: cover;
       height: 100%;
       width: 100%;
+
+      .teaser--sound & {
+        position: absolute;
+      }
     }
   }
 
   &__title {
+    @include font-size(h3);
+
     margin-top: 0;
   }
 
