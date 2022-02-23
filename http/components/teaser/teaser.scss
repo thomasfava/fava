@@ -21,7 +21,7 @@
 
   &__image {
     order: -1;
-    height: 15rem;
+    height: 16rem;
     overflow: hidden;
     border-bottom: thin solid $lightgray;
     border-top-left-radius: 1.1rem;
@@ -34,7 +34,7 @@
     }
 
     .overview--large & {
-      height: 19rem;
+      height: 20rem;
     }
 
     .overview__item:nth-child(even) & {
