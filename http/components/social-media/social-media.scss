@@ -59,7 +59,7 @@
     cursor: pointer;
 
     > * {
-      @include transition(all, slow);
+      @include transition(all);
     }
 
     &:active,
@@ -67,11 +67,11 @@
     &:focus-within,
     &:hover {
       border-color: $petrol;
-      //background-color: lighten($lightergray, 1%);
       background-color: rgba(white, 0.24);
+      transform: translateY(-0.1rem);
 
       > *  {
-        transform: scale(1.12);
+        transform: scale(1.08);
       }
     }
 
