@@ -100,4 +100,29 @@
       }
     }
   }
+
+  // Ajuinvrij
+  &--intro.is-ajuinvrij {
+    $label-size: 6rem;
+    $label-offset-x: 2rem;
+    $label-offset-y: 0.2rem;
+
+    .page-article__content {
+      position: relative;
+      padding-bottom: (3/2 * $label-size);
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: $label-size;
+        height: $label-size;
+        left: $label-offset-x;
+        bottom: $label-offset-y;
+        z-index: 0;
+        border-radius: (1/2 * $label-size);
+        background-image: url(../../../images/ajuinvrij.svg);
+        background-size: contain;
+      }
+    }
+  }
 }
