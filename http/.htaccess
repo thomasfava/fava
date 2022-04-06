@@ -3,3 +3,25 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https
 SetEnvIf X-Forwarded-Proto "https" HTTPS=on
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+Redirect 301 /taste/aymonaise/ https://www.knaptand.be/recepten/aymonaise/
+Redirect 301 /taste/creme-quarantraise/ https://www.knaptand.be/recepten/creme-quarantraise/
+Redirect 301 /taste/dlucers/ https://www.knaptand.be/recepten/dlucers/
+Redirect 301 /taste/gevulde-kalkoen-met-champignonsaus/ https://www.knaptand.be/recepten/gevulde-kalkoen-met-champignonsaus/
+Redirect 301 /taste/paardenworsten/ https://www.knaptand.be/recepten/paardenworsten/
+Redirect 301 /taste/rode-duvel/ https://www.knaptand.be/recepten/rode-duvel/
+Redirect 301 /taste/salade-nutcoise/ https://www.knaptand.be/recepten/salade-nutcoise/
+Redirect 301 /taste/spitbull/ https://www.knaptand.be/recepten/spitbull/
+Redirect 301 /taste/toastas/ https://www.knaptand.be/recepten/toastas/
+Redirect 301 /taste/varkenswangen-met-malheur-12/ https://www.knaptand.be/recepten/varkenswangen-met-malheur-12/
+Redirect 301 /taste/veau-biere/ https://www.knaptand.be/recepten/veau-biere/
+Redirect 301 /images/aymonaise-open-graph.jpg https://www.knaptand.be/images/aymonaise-open-graph.jpg
+Redirect 301 /images/creme-quarantraise-open-graph.jpg https://www.knaptand.be/images/creme-quarantraise-open-graph.jpg
+Redirect 301 /images/dlucers-open-graph.jpg https://www.knaptand.be/images/dlucers-open-graph.jpg
+Redirect 301 /images/gevulde-kalkoen-met-champignonsaus-open-graph.jpg https://www.knaptand.be/images/gevulde-kalkoen-met-champignonsaus-open-graph.jpg
+Redirect 301 /images/paardenworsten-open-graph.jpg https://www.knaptand.be/images/paardenworsten-open-graph.jpg
+Redirect 301 /images/rode-duvel-open-graph.jpg https://www.knaptand.be/images/rode-duvel-open-graph.jpg
+Redirect 301 /images/salade-nutcoise-open-graph.jpg https://www.knaptand.be/images/salade-nutcoise-open-graph.jpg
+Redirect 301 /images/spitbull-open-graph.jpg https://www.knaptand.be/images/spitbull-open-graph.jpg
+Redirect 301 /images/toastas-open-graph.jpg https://www.knaptand.be/images/toastas-open-graph.jpg
+Redirect 301 /images/varkenswangen-open-graph.jpg https://www.knaptand.be/images/varkenswangen-open-graph.jpg
+Redirect 301 /images/veau-biere-open-graph.jpg https://www.knaptand.be/images/veau-biere-open-graph.jpg
