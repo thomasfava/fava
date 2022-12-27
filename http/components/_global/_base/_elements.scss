@@ -133,6 +133,6 @@ img {
   // Alt attributes should be filled in
   &[alt=""],
   &:not([alt]) {
-    border: thick dashed $color-base-error;
+    //border: thick dashed $color-base-error;
   }
 }
