@@ -9,6 +9,8 @@
 
     &--branding {
       flex-grow: 0;
+      line-height: 0;
+      outline-color: $color-base-background;
     }
 
     &--main-navigation {}
