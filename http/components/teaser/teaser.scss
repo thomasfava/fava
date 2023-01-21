@@ -1,44 +1,97 @@
+@use "sass:math";
 @import "sass-essentials";
 
 .teaser {
+  // Variables
+  $border-size: 0.1rem;
+  $corner-size: 4.2rem;
+
+  // Calculated
+  $squareroot:  ($border-size / 1rem * $border-size / 1rem / 2);
+  $pythagoras:  ((sqrt($squareroot) * 1rem) + $corner-size);
+  $pythagoras-inner: ($corner-size - ((sqrt($squareroot) * 1rem)));
+
+  // Declarations
   @include transition(cosmetic);
-  @include shadow;
 
   position: relative;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  border: thin solid $lightgray;
-  border-radius: 1.2rem 3.6rem 1.2rem 0;
+  filter: drop-shadow(0 0 0.3rem rgba(red($darkpetrol), green($darkpetrol), blue($darkpetrol), 0.1));
+  border: $border-size solid $lightgray;
 
-  .overview__item:nth-child(even) & {
-    border-radius: 1.2rem 0 1.2rem 3.6rem;
+  @supports (clip-path: initial) {
+    border: none;
+    padding: $border-size;
+  }
+
+  &::after {
+    // Pseudo border
+    @include transition(cosmetic);
+
+    @supports (clip-path: initial) {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-color: $lightgray;
+    }
+
+    .overview__item:nth-child(odd) & {
+      // Bottom right corner
+      clip-path: polygon(0 0, 0 100%, $border-size 100%, $border-size $border-size, calc(100% - #{$border-size}) $border-size, calc(100% - #{$border-size}) calc(100% - #{$pythagoras}), calc(100% - #{$pythagoras}) calc(100% - #{$border-size}), $border-size calc(100% - #{$border-size}), $border-size 100%, calc(100% - #{$corner-size}) 100%, 100% calc(100% - #{$corner-size}), 100% 0);
+    }
+
+    .overview__item:nth-child(even) & {
+      // Top left corner
+      clip-path: polygon(0 $corner-size, 0 100%, $border-size 100%, $border-size $pythagoras, $pythagoras $border-size, calc(100% - #{$border-size}) $border-size, calc(100% - #{$border-size}) calc(100% - #{$border-size}), $border-size calc(100% - #{$border-size}), $border-size 100%, 100% 100%, 100% 0, $corner-size 0);
+    }
   }
 
   &__content {
+    flex-grow: 1;
     padding: 1.8rem 2rem 3.2rem;
+    filter: none;
+
+    &::after {
+      @include transition(cosmetic);
+
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-color: $color-base-background;
+    }
+
+    .overview__item:nth-child(odd) &::after {
+      // Bottom right corner
+      clip-path: polygon(0 0, 100% 0, 100% calc(100% - #{$pythagoras-inner}), calc(100% - #{$pythagoras-inner}) 100%, 0 100%);
+    }
+
+    .overview__item:nth-child(even) &::after {
+      // Top left corner
+      clip-path: polygon($pythagoras-inner 0, 100% 0, 100% 100%, 0 100%, 0 $pythagoras-inner);
+    }
   }
 
   &__image {
     order: -1;
     height: 16rem;
     overflow: hidden;
-    border-bottom: thin solid $lightgray;
-    border-top-left-radius: 1.1rem;
-    border-top-right-radius: 3.5rem;
+    border-bottom: $border-size solid $lightgray;
+
+    .overview__item:nth-child(even) & {
+      // Top left corner
+      clip-path: polygon($pythagoras-inner 0, 100% 0, 100% 100%, 0 100%, 0 $pythagoras-inner);
+    }
 
     .teaser--sound & {
-      position: relative;
-      height: 0;
-      padding-bottom: 100%;
+      height: auto;
     }
 
     .overview--large & {
       height: 20rem;
-    }
-
-    .overview__item:nth-child(even) & {
-      border-top-right-radius: 0;
     }
 
     img {
@@ -49,7 +102,7 @@
       width: 100%;
 
       .teaser--sound & {
-        position: absolute;
+        aspect-ratio: 1;
       }
     }
   }
@@ -69,11 +122,6 @@
       bottom: 0;
       left: 0;
       z-index: 1;
-      border-radius: 1.2rem 3.6rem 1.2rem 0;
-
-      .overview__item:nth-child(even) & {
-        border-radius: 1.2rem 0 1.2rem 3.6rem;
-      }
     }
   }
 
@@ -82,8 +130,17 @@
   &:focus-within,
   &:hover {
     border-color: $petrol;
-    background-color: rgba(white, 0.24);
     transform: translateY(-0.1rem);
+
+    &::after {
+      @supports (clip-path: initial) {
+        background-color: $petrol;
+      }
+    }
+
+    .teaser__content::after {
+      background-color: lighten($color-base-background, 0.2);
+    }
 
     .teaser__image img {
       transform: scale(1.02);
@@ -92,10 +149,12 @@
 
   &:focus-within,
   &:focus {
-    box-shadow: 0 0 0.6rem -0.2rem $petrol;
+    filter: drop-shadow(0 0 0.3rem rgba(red($petrol), green($petrol), blue($petrol), 0.3));
 
     &:not(:focus-visible) {
-      background-color: rgba(white, 0.4);
+      .teaser__content::after {
+        background-color: lighten($color-base-background, 0.4);
+      }
     }
   }
 
