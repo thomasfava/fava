@@ -1,0 +1,41 @@
+@import "sass-essentials";
+
+.main-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: $h5-font-size;
+
+  &__items {
+    @include reset-list;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 3.2rem;
+    padding-block: 0.8rem;
+  }
+
+  &__item {
+    flex-grow: 1;
+  }
+
+  &__link {
+    @include font-weight(500);
+    @include link(inverse);
+
+    text-decoration: none;
+    border-bottom: thin solid transparent;
+    opacity: 0.9;
+
+    &:focus {
+      opacity: 1;
+    }
+
+    &:hover,
+    &[current*="page"],
+    .main-navigation--active-trail & {
+      border-color: currentColor;
+      opacity: 1;
+    }
+  }
+}

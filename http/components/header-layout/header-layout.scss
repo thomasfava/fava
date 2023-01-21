@@ -11,9 +11,14 @@
       flex-grow: 0;
       line-height: 0;
       outline-color: $color-base-background;
+      margin-right: 2rem;
     }
 
-    &--main-navigation {}
+    &--main-navigation {
+      flex-grow: 0;
+      margin-left: auto;
+    }
+
     &--secondary-navigation {}
   }
 }

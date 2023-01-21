@@ -72,7 +72,8 @@
 		<header class="page__header page-header">
 			<div class="header-layout container">
 
-				<div class="header-layout__item header-layout__item--branding">
+				<a href="https://fava.be/" rel="home" class="header-layout__item header-layout__item--branding" aria-current="page">
+					<span class="visually-hidden">Homepage Fava</span>
 					<svg aria-hidden="true" focusable="false" class="visually-hidden">
 						<linearGradient id="logo-gradient" x2="0" y2="1">
 							<stop offset="0%" stop-color="var(--color-stop-1)" />
@@ -89,7 +90,18 @@
 						c-5.2-75.8,25.2-147.3,78-196.3c-4.2,13.8-6.4,28.5-6.4,43.7c0,83.7,67.9,151.6,151.6,151.6c0.7,0,1.4,0,2.1,0
 						c109.9-0.6,209.2-45.8,280.8-118.4c2.3,1.8,5.2,2.8,8.3,2.8c7.5,0,13.7-6.1,13.7-13.7S571.5,255,563.9,255z"/>
 					</svg>
-				</div>
+				</a>
+
+				<nav class="header-layout__item header-layout__item--main-navigation main-navigation" aria-label="Main navigation">
+					<ul class="main-navigation__items">
+						<li class="main-navigation__item">
+							<a href="https://fava.be/sound/" class="main-navigation__link">Sound</a>
+						</li>
+						<li class="main-navigation__item">
+							<a href="https://fava.be/taste/" class="main-navigation__link">Taste</a>
+						</li>
+					</ul>
+				</nav>
 
 			</div>
 		</header>
@@ -133,7 +145,7 @@
 								<p>Recordings, mashups, livesets & streams.</p>
 							</div>
 							<div class="teaser__image">
-								<img src="images/sound-default-teaser.png" alt=" ">
+								<img src="images/sound-default-teaser.png" alt="">
 							</div>
 						</div>
 					</li>
@@ -147,7 +159,7 @@
 								<p>Surprisingly delicious recipes, easy to prepare.</p>
 							</div>
 							<div class="teaser__image">
-								<img src="images/taste-default-teaser.png" alt=" ">
+								<img src="images/taste-default-teaser.png" alt="">
 							</div>
 						</div>
 					</li>
