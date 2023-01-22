@@ -1,9 +1,12 @@
 @import "sass-essentials";
 
 .breadcrumb {
-  margin: 0 0 0.6rem;
+  $breadcrumb-icons-size: 0.6rem;
+
+  width: 100%;
   font-size: $h5-font-size;
   text-transform: lowercase;
+  margin-block: 0.4rem;
 
   &__items {
     list-style: none;
@@ -14,14 +17,37 @@
   &__item {
     display: inline-block;
 
-    &::after {
-      content: " -";
-    }
-
-    &:last-child::after {
-      content: none;
+    // Only show last two items
+    &:not(&:nth-last-child(-n+2)) {
+      @include visually-hidden();
     }
   }
 
-  &__link {}
+  &__link {
+    display: inline-block;
+    padding-block: 0.4rem;
+    opacity: 0.9;
+
+    &--current {
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    line-height: 0;
+    width: $breadcrumb-icons-size;
+    height: $breadcrumb-icons-size;
+    transform: translateY(-0.1rem);
+    margin-inline: 0.1rem;
+
+    svg {
+      fill: $color-base-link;
+    }
+  }
 }
