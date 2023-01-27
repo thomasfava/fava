@@ -19,7 +19,7 @@
 
     // Only show last two items
     &:not(&:nth-last-child(-n+2)) {
-      @include visually-hidden();
+      display: none;
     }
   }
 
