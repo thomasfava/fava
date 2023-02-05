@@ -1,6 +1,7 @@
 @import "sass-essentials";
 
 .overview {
+  margin-bottom: 8rem;
 
   &--small {
     max-width: 58rem;
@@ -8,7 +9,7 @@
   }
 
   &--large {
-    //margin: 8rem auto;
+    margin-bottom: 0;
   }
 
   &__intro {
@@ -44,6 +45,11 @@
       display: flex;
       margin: 0;
       max-width: none;
+    }
+
+    &--full {
+      grid-column-start: 1;
+      grid-column-end: -1;
     }
   }
 }
