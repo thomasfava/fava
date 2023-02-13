@@ -5,6 +5,9 @@
 
   &--home {
     padding-top: 4rem; // Breadcrumb
+    margin-inline: auto;
+    max-width: 58rem;
+    margin-bottom: 8rem;
   }
 
   > *:first-child {
