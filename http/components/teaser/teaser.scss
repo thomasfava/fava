@@ -77,7 +77,7 @@
 
   &__image {
     order: -1;
-    height: 16rem;
+    height: 14rem;
     overflow: hidden;
     border-bottom: $border-size solid $lightgray;
 
@@ -174,29 +174,6 @@
       &, &:not(:focus-visible)::before {
         outline: none;
       }
-    }
-  }
-
-  // Ajuinvrij
-  &.is-ajuinvrij {
-    $label-size: 3.2rem;
-    $label-offset-x: 1.8rem;
-    $label-offset-y: 1.2rem;
-
-    position: relative;
-    padding-bottom: (1/2 * $label-size);
-
-    &::after {
-      content: '';
-      position: absolute;
-      width: $label-size;
-      height: $label-size;
-      right: $label-offset-x;
-      bottom: $label-offset-y;
-      z-index: 0;
-      border-radius: (1/2 * $label-size);
-      background-image: url(../../../images/ajuinvrij.svg);
-      background-size: contain;
     }
   }
 }
