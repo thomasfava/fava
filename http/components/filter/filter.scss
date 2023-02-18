@@ -1,0 +1,42 @@
+@import "sass-essentials";
+
+.filter {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem clamp(1.2rem, 2vw, 1.8rem);
+  margin-block: 2.4rem 1.2rem;
+  font-size: $h5-font-size;
+  text-transform: lowercase;
+
+  &__link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 1.2rem 0.2rem;
+    border-radius: 1.2rem;
+    border: thin solid $lightgray;
+
+    &:hover,
+    &:focus,
+    &[aria-current*="page"] {
+      @include shadow();
+
+      border-color: $petrol;
+      background-color: lighten($color-base-background, 0.2);
+      transform: translateY(-0.1rem);
+    }
+
+
+    &[aria-current*="page"] {
+      color: $darkpetrol;
+      background-color: lighten($color-base-background, 0.4);
+      transform: translateY(0);
+
+      &:hover,
+      &:focus {
+        transform: translateY(-0.1rem);
+      }
+    }
+  }
+}

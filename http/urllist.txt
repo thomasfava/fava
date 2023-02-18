@@ -1,4 +1,13 @@
 https://fava.be/
 https://fava.be/sound/
+https://fava.be/sound/live/
+https://fava.be/sound/mashup/
+https://fava.be/sound/p2b/
+https://fava.be/sound/remember/
+https://fava.be/sound/retro/
+https://fava.be/sound/stream/
+https://fava.be/sound/trance/
+https://fava.be/sound/vintage/
+https://fava.be/sound/vinyl/
 https://fava.be/taste/
 https://fava.be/code/
