@@ -112,6 +112,7 @@
     @include font-size(h3);
 
     margin-top: 0;
+    text-wrap: balance;
   }
 
   &__link {
@@ -124,6 +125,10 @@
       left: 0;
       z-index: 1;
     }
+  }
+
+  p {
+    text-wrap: balance;
   }
 
   &:active,
