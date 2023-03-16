@@ -49,23 +49,34 @@
       flex-grow: 1;
     }
 
+    .page-article__content--sound {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 8;
+
+      p:last-of-type {
+        margin-bottom: auto;
+      }
+    }
+
     .page-article__visual {
       flex-grow: 0;
       flex-shrink: 0;
     }
 
-    .page-article__visual--recipe {
+    .page-article__visual--sound {
       flex-grow: 1;
       flex-basis: 28rem;
       padding-top: 1.2rem;
+      align-self: end;
+      max-width: 38rem;
 
       > * {
+        @include shadow();
+
+        border: thin solid $lightgray;
         object-fit: cover;
-        min-height: 20rem;
-        max-height: 26rem;
         width: 100%;
-        border-radius: 1.2rem 3.6rem 1.2rem 0;
-        box-shadow: 0.1rem 0.1rem 0.7rem -0.4rem $gray;
       }
     }
   }
