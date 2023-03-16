@@ -65,6 +65,11 @@
       fill: $peirt-dark;
     }
 
+    .embed-container,
+    .page-article__visual--sound > * {
+      box-shadow: 0 0 0.6rem -0.4rem $peirt-dark;
+    }
+
     .embed-container:hover {
       border-color: $peirt-highlight;
     }
@@ -85,6 +90,7 @@
     .filter__link[aria-current*="page"] {
       border-color: $peirt-highlight;
       color: $peirt-dark;
+      box-shadow: 0 0 0.6rem -0.4rem $peirt-dark;
     }
   }
 }
