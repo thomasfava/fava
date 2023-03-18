@@ -13,6 +13,16 @@
     width: 100%;
   }
 
+  // Aside
+  &__aside {
+    width: 100%;
+    margin-bottom: 4.8rem;
+
+    & > * {
+      margin-top: 0;
+    }
+  }
+
   // Footer
   &__footer {
     width: 100%;

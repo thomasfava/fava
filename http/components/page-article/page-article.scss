@@ -35,6 +35,7 @@
     flex-wrap: wrap;
     margin-left: -$article-gutter;
     margin-right: -$article-gutter;
+    margin-bottom: 0;
 
     > * {
       padding-left: $article-gutter;
@@ -66,7 +67,7 @@
 
     .page-article__visual--sound {
       flex-grow: 1;
-      flex-basis: 28rem;
+      flex-basis: 30rem;
       padding-top: 1.2rem;
       align-self: end;
       max-width: 38rem;
