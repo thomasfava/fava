@@ -1,11 +1,14 @@
 @import "sass-essentials";
 
 .overview {
-  margin-bottom: 8rem;
+  margin-inline: auto;
+
+  & + & {
+    margin-top: 12rem;
+  }
 
   &--small {
     max-width: 58rem;
-    margin: 8rem auto;
   }
 
   &--large {
