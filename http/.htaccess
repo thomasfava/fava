@@ -11,7 +11,6 @@ Redirect 301 /taste/paardenworsten/ https://www.knaptand.be/recepten/paardenwors
 Redirect 301 /taste/rode-duvel/ https://www.knaptand.be/recepten/rode-duvel/
 Redirect 301 /taste/salade-nutcoise/ https://www.knaptand.be/recepten/salade-nutcoise/
 Redirect 301 /taste/spitbull/ https://www.knaptand.be/recepten/spitbull/
-Redirect 301 /taste/toastas/ https://www.knaptand.be/recepten/toastas/
 Redirect 301 /taste/varkenswangen-met-malheur-12/ https://www.knaptand.be/recepten/varkenswangen-met-malheur-12/
 Redirect 301 /taste/veau-biere/ https://www.knaptand.be/recepten/veau-biere/
 Redirect 301 /images/aymonaise-open-graph.jpg https://www.knaptand.be/images/aymonaise-open-graph.jpg
@@ -22,6 +21,5 @@ Redirect 301 /images/paardenworsten-open-graph.jpg https://www.knaptand.be/image
 Redirect 301 /images/rode-duvel-open-graph.jpg https://www.knaptand.be/images/rode-duvel-open-graph.jpg
 Redirect 301 /images/salade-nutcoise-open-graph.jpg https://www.knaptand.be/images/salade-nutcoise-open-graph.jpg
 Redirect 301 /images/spitbull-open-graph.jpg https://www.knaptand.be/images/spitbull-open-graph.jpg
-Redirect 301 /images/toastas-open-graph.jpg https://www.knaptand.be/images/toastas-open-graph.jpg
 Redirect 301 /images/varkenswangen-open-graph.jpg https://www.knaptand.be/images/varkenswangen-open-graph.jpg
 Redirect 301 /images/veau-biere-open-graph.jpg https://www.knaptand.be/images/veau-biere-open-graph.jpg
