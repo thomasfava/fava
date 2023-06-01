@@ -17,16 +17,16 @@ body {
   font-family: $primary-font;
   line-height: $base-line-height;
   font-size: $base-font-size;
-  color: $color-base-text;
+  color: var(--fava-text);
   font-weight: $base-font-weight;
-  background-color: $color-base-background;
+  background-color: var(--fava-background);
 }
 
 // Selected text
 * {
   &::selection {
-    color: $color-base-selected-text;
-    background: $color-base-selected-text-background;
+    color: var(--fava-text-selected);
+    background: var(--fava-background-selected);
   }
 
   &:focus {
@@ -45,7 +45,7 @@ h6 {
   @include font-weight(500);
   line-height: $base-line-height-heading;
   margin: 3.6rem 0 1.2rem;
-  color: $petrol;
+  color: var(--fava-heading);
 
   a {
     color: inherit;

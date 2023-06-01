@@ -14,18 +14,15 @@ $darkpetrol: #2E6171;
 
 $purleblue: #413C58;
 $lightgray: #d2d2d2;
-$lightergray: #FDFDFF;
+$lightergray: #FDFDFD;
+$lightgray-active: #FFFFFF;
 
-
-
+$darkgray: #080b10;
+$darkgray-active: #0B1017;
 
 $petrolgrayy: #8B8BAE;
 $darkpetroly: #2E86AB;
 $darkerpetroly: #1F363D;
-
-
-
-
 
 
 $una: #5a4b60;
@@ -198,3 +195,5 @@ $color-base-border: map-get($colors-grays, "dark");
 //$color-base-background-secondary: map-get($colors-grays, "black");
 //$color-base-border-secondary: map-get($colors-grays, "darker");
 //$color-base-border: map-get($colors-grays, "darker");
+
+

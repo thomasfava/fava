@@ -1,1 +1,173 @@
 // @font-face declarations go here
+
+:root {
+  $project: fava;
+
+  // Text
+  --fava-text: #{$color-base-text};
+  --fava-text-selected: #{$color-base-selected-text};
+
+  --fava-accent: #{$petrol};
+  --fava-accent-selected: #{$petrol};
+
+  --fava-text-invert: #{$lightgray};
+  --fava-text-invert-selected: #{$color-base-selected-text};
+
+  --fava-accent-invert: #{$petrol};
+  --fava-accent-invert-selected: #{$petrol};
+
+  // Background
+  --fava-background: #FDFDFD;
+  --fava-background-hover: #{$color-base-background};
+  --fava-background-focus: #{$color-base-background};
+  --fava-background-active: #{$lightgray-active};
+  --fava-background-selected: #{$color-base-selected-text-background};
+
+  --fava-background-invert: #{$darkgray};
+  --fava-background-invert-hover: #{$color-base-background};
+  --fava-background-invert-focus: #{$color-base-background};
+  --fava-background-invert-active: #{$darkgray-active};
+  --fava-background-invert-selected: #{$color-base-selected-text-background};
+
+  // Links
+  --fava-link: #{$color-base-link};
+  --fava-link-hover: #{$color-base-background};
+  --fava-link-focus: #{$color-base-background};
+  --fava-link-active: #{$color-base-link-hover};
+  --fava-link-selected: #{$color-base-selected-text-background};
+
+  --fava-decoration: #{$color-base-link-underline};
+  --fava-decoration-hover: #{$color-base-background};
+  --fava-decoration-focus: #{$color-base-background};
+  --fava-decoration-active: #{$color-base-link-underline-hover};
+  --fava-decoration-selected: #{$color-base-selected-text-background};
+
+  --fava-link-invert: #{$color-base-link-invert};
+  --fava-link-invert-hover: #{$color-base-background};
+  --fava-link-invert-focus: #{$color-base-background};
+  --fava-link-invert-active: #{$color-base-link-hover-invert};
+  --fava-link-invert-selected: #{$color-base-selected-text-background};
+
+  --fava-decoration-invert: #{$color-base-link-underline-invert};
+  --fava-decoration-invert-hover: #{$color-base-background};
+  --fava-decoration-invert-focus: #{$color-base-background};
+  --fava-decoration-invert-active: #{$color-base-link-underline-hover-invert};
+  --fava-decoration-invert-selected: #{$color-base-selected-text-background};
+
+  // Heading
+  --fava-heading: #{$petrol};
+  --fava-heading-hover: #{$color-base-background};
+  --fava-heading-focus: #{$color-base-background};
+  --fava-heading-active: #{$petrol};
+  --fava-heading-selected: #{$color-base-selected-text-background};
+
+  --fava-heading-invert: #{$lightergray};
+  --fava-heading-invert-hover: #{$color-base-background};
+  --fava-heading-invert-focus: #{$color-base-background};
+  --fava-heading-invert-active: #{$petrol};
+  --fava-heading-invert-selected: #{$color-base-selected-text-background};
+
+  // Border
+  --fava-border: #{$lightgray};
+  --fava-border-hover: #{$darkpetrol};
+  --fava-border-focus: #{$darkpetrol};
+  --fava-border-active: #{$darkpetrol};
+  --fava-border-selected: #{$darkpetrol};
+
+  --fava-border-invert: #{$darkpetrol};
+  --fava-border-invert-hover: #{$petrol};
+  --fava-border-invert-focus: #{$petrol};
+  --fava-border-invert-active: #{$petrol};
+  --fava-border-invert-selected: #{$petrol};
+
+  // Shadow
+  --fava-shadow: #{$petrol};
+  --fava-shadow-invert: #{$petrol};
+
+  // Logo
+  --fava-logo: #{$petrol};
+  --fava-logo-start: #{$petrol};
+  --fava-logo-end: #{$darkpetrol};
+
+  --fava-logo-invert: #{$petrol};
+  --fava-logo-invert-start: #{$petrol};
+  --fava-logo-invert-end: #{$darkpetrol};
+
+  // Icon
+  --fava-icon: #{$petrol};
+  --fava-icon-start: #{$petrol};
+  --fava-icon-end: #{$darkpetrol};
+
+  --fava-icon-invert: #{$petrol};
+  --fava-icon-invert-start: #{$petrol};
+  --fava-icon-invert-end: #{$darkpetrol};
+
+  // Status, Good, Strong (limegreen)
+  --fava-text-status: #{xxx};
+  --fava-background-status: #{xxx};
+
+  --fava-text-invert-status: #{xxx};
+  --fava-background-invert-status: #{xxx};
+
+  // Warning, Fair (gold)
+  --fava-text-warning: #{xxx};
+  --fava-background-warning: #{xxx};
+
+  --fava-text-invert-warning: #{xxx};
+  --fava-background-invert-warning: #{xxx};
+
+  // Error, Weak (firebrick)
+  --fava-text-error: #{xxx};
+  --fava-background-error: #{xxx};
+
+  --fava-text-invert-error: #{xxx};
+  --fava-background-invert-error: #{xxx};
+
+  @media (prefers-color-scheme: dark) {
+    // Text
+    --fava-text: var(--fava-text-invert);
+    --fava-text-accent: var(--fava-text-invert-accent);
+    --fava-text-selected: var(--fava-text-invert-selected);
+
+    // Background
+    --fava-background: var(--fava-background-invert);
+    --fava-background-hover: var(--fava-background-invert-hover);
+    --fava-background-focus: var(--fava-background-invert-focus);
+    --fava-background-active: var(--fava-background-invert-active);
+    --fava-background-selected: var(--fava-background-invert-selected);
+
+    // Links
+    --fava-link: var(--fava-link-invert);
+    --fava-link-hover: var(--fava-link-invert-hover);
+    --fava-link-focus: var(--fava-link-invert-focus);
+    --fava-link-active: var(--fava-link-invert-active);
+    --fava-link-selected: var(--fava-link-invert-selected);
+
+    --fava-decoration: var(--fava-decoration-invert);
+    --fava-decoration-hover: var(--fava-decoration-invert-hover);
+    --fava-decoration-focus: var(--fava-decoration-invert-focus);
+    --fava-decoration-active: var(--fava-decoration-invert-active);
+    --fava-decoration-selected: var(--fava-decoration-invert-selected);
+
+    // Heading
+    --fava-heading: var(--fava-heading-invert);
+    --fava-heading-hover: var(--fava-heading-invert-hover);
+    --fava-heading-focus: var(--fava-heading-invert-focus);
+    --fava-heading-active: var(--fava-heading-invert-active);
+    --fava-heading-selected: var(--fava-heading-invert-selected);
+
+    // Border
+    --fava-border: var(--fava-border-invert);
+    --fava-border-hover: var(--fava-border-invert-hover);
+    --fava-border-focus: var(--fava-border-invert-focus);
+    --fava-border-active: var(--fava-border-invert-active);
+    --fava-border-selected: var(--fava-border-invert-selected);
+
+    // Shadow
+    --fava-shadow: var(--fava-shadow-invert);
+
+    img {
+      filter: brightness(90%);
+    }
+  }
+}

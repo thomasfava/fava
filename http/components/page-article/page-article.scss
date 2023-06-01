@@ -80,6 +80,33 @@
         width: 100%;
       }
     }
+
+    .page-article__visual--recipe {
+      // Variables
+      $border-size: 0.1rem;
+      $corner-size: 4.2rem;
+
+      // Calculated
+      $squareroot:  ($border-size / 1rem * $border-size / 1rem / 2);
+      $pythagoras:  ((sqrt($squareroot) * 1rem) + $corner-size);
+      $pythagoras-inner: ($corner-size - ((sqrt($squareroot) * 1rem)));
+
+      flex-grow: 1;
+      flex-basis: 28rem;
+      padding-top: 1.2rem;
+      filter: drop-shadow(0 0 0.3rem rgba(red($darkpetrol), green($darkpetrol), blue($darkpetrol), 0.1));
+
+      > * {
+        object-fit: cover;
+        min-height: 20rem;
+        max-height: 26rem;
+        width: 100%;
+
+        @supports (clip-path: initial) {
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - #{$pythagoras-inner}), calc(100% - #{$pythagoras-inner}) 100%, 0 100%);
+        }
+      }
+    }
   }
 
   &--tools {}
@@ -120,31 +147,6 @@
         display: block;
         margin-bottom: 0.4rem;
         color: $petrol;
-      }
-    }
-  }
-
-  // Ajuinvrij
-  &--intro.is-ajuinvrij {
-    $label-size: 6rem;
-    $label-offset-x: 2rem;
-    $label-offset-y: 0.2rem;
-
-    .page-article__content {
-      position: relative;
-      padding-bottom: (3/2 * $label-size);
-
-      &::after {
-        content: '';
-        position: absolute;
-        width: $label-size;
-        height: $label-size;
-        left: $label-offset-x;
-        bottom: $label-offset-y;
-        z-index: 0;
-        border-radius: (1/2 * $label-size);
-        background-image: url(../../../images/ajuinvrij.svg);
-        background-size: contain;
       }
     }
   }
