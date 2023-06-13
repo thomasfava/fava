@@ -28,7 +28,7 @@
 
   &__artist {
     font-weight: 500;
-    color: $petrol;
+    color: var(--fava-accent);
   }
 
   &__title {}
@@ -40,11 +40,11 @@
   }
 
   &__version {
-    color: $petrol;
+    color: var(--fava-accent);
   }
 
   &__label {
-    color: $petrol;
+    color: var(--fava-accent);
     margin-inline-start: .5ch;
     font-size: $base-font-size-smaller;
   }

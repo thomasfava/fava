@@ -145,7 +145,7 @@
     }
 
     .teaser__content::after {
-      background-color: var(--fava-background-active);
+      background-color: var(--fava-background-focus);
     }
 
     .teaser__image img {
@@ -159,7 +159,7 @@
 
     &:not(:focus-visible) {
       .teaser__content::after {
-        background-color: lighten($color-base-background, 0.4);
+        background-color: var(--fava-background-active);
       }
     }
   }

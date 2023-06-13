@@ -15,22 +15,22 @@
     display: inline-block;
     padding: 0 1.2rem 0.2rem;
     border-radius: 1.2rem;
-    border: thin solid $lightgray;
+    border: thin solid var(--fava-border);
 
     &:hover,
     &:focus,
     &[aria-current*="page"] {
       @include shadow();
 
-      border-color: $petrol;
-      background-color: lighten($color-base-background, 0.2);
+      border-color: var(--fava-border-focus);
+      background-color: var(--fava-background-focus);
       transform: translateY(-0.1rem);
     }
 
 
     &[aria-current*="page"] {
-      color: $darkpetrol;
-      background-color: lighten($color-base-background, 0.4);
+      color: var(--fava-link-active);
+      background-color: var(--fava-background-active);
       transform: translateY(0);
 
       &:hover,

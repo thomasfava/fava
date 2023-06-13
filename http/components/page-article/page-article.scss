@@ -75,7 +75,7 @@
       > * {
         @include shadow();
 
-        border: thin solid $lightgray;
+        border: thin solid var(--fava-border);
         object-fit: cover;
         width: 100%;
       }
@@ -121,7 +121,7 @@
 
       &::before {
         content: "";
-        background-color: $petrol;
+        background-color: var(--fava-accent);
         position: absolute;
         top: 0.66em;
         left: -1.6rem;
@@ -146,7 +146,7 @@
         content: counter(custom-counter) ". ";
         display: block;
         margin-bottom: 0.4rem;
-        color: $petrol;
+        color: var(--fava-accent);
       }
     }
   }

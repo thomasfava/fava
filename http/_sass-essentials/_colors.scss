@@ -15,7 +15,7 @@ $darkpetrol: #2E6171;
 $purleblue: #413C58;
 $lightgray: #d2d2d2;
 $lightergray: #FDFDFD;
-$lightgray-active: #FFFFFF;
+$white: #FFFFFF;
 
 $darkgray: #080b10;
 $darkgray-active: #0B1017;
@@ -157,13 +157,13 @@ $color-base-link-hover: map-get($colors-complementary, "primary");
 $color-base-link-underline: lighten($color-base-link, 62%);
 $color-base-link-underline-hover: $lightgray;
 
-$color-base-text-invert: map-get($colors-grays, "white");
+$color-base-text-invert: $lightgray;
 $color-base-background-invert: map-get($colors, "primary");
 
 $color-base-link-invert: map-get($colors-grays, "white");
 $color-base-link-hover-invert: map-get($colors-grays, "white");
-$color-base-link-underline-invert: inherit;
-$color-base-link-underline-hover-invert: inherit;
+$color-base-link-underline-invert: map-get($colors, "primary");
+$color-base-link-underline-hover-invert: map-get($colors, "primary");
 
 
 // SELECTED TEXT COLORS

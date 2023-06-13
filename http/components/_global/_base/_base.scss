@@ -1,173 +1,198 @@
-// @font-face declarations go here
-
 :root {
   $project: fava;
 
+  color-scheme: light dark;
+
   // Text
-  --fava-text: #{$color-base-text};
-  --fava-text-selected: #{$color-base-selected-text};
+  --#{$project}-text: #{$color-base-text};
+  --#{$project}-text-selected: #{$color-base-selected-text};
 
-  --fava-accent: #{$petrol};
-  --fava-accent-selected: #{$petrol};
+  $text-invert: #{$lightergray};
+  $text-invert-selected: #{$white};
 
-  --fava-text-invert: #{$lightgray};
-  --fava-text-invert-selected: #{$color-base-selected-text};
+  // Accent
+  --#{$project}-accent: #{$petrol};
+  --#{$project}-accent-selected: #{$petrol};
 
-  --fava-accent-invert: #{$petrol};
-  --fava-accent-invert-selected: #{$petrol};
+  $accent-invert: #{$white};
+  $accent-invert-selected: #{$petrol};
 
   // Background
-  --fava-background: #FDFDFD;
-  --fava-background-hover: #{$color-base-background};
-  --fava-background-focus: #{$color-base-background};
-  --fava-background-active: #{$lightgray-active};
-  --fava-background-selected: #{$color-base-selected-text-background};
+  --#{$project}-background: #{$lightergray};
+  --#{$project}-background-hover: #{$color-base-background};
+  --#{$project}-background-focus: #{$color-base-background};
+  --#{$project}-background-active: #{$white};
+  --#{$project}-background-selected: #{$color-base-selected-text-background};
 
-  --fava-background-invert: #{$darkgray};
-  --fava-background-invert-hover: #{$color-base-background};
-  --fava-background-invert-focus: #{$color-base-background};
-  --fava-background-invert-active: #{$darkgray-active};
-  --fava-background-invert-selected: #{$color-base-selected-text-background};
+  $background-invert: $darkpetrol;
+  $background-invert-hover: $darkpetrol;
+  $background-invert-focus: $darkpetrol;
+  $background-invert-active: $darkpetrol;
+  $background-invert-selected: $petrol;
+
+  // Header
+  --#{$project}-header: #{$petrol};
+
+  $header-invert: $darkpetrol;
 
   // Links
-  --fava-link: #{$color-base-link};
-  --fava-link-hover: #{$color-base-background};
-  --fava-link-focus: #{$color-base-background};
-  --fava-link-active: #{$color-base-link-hover};
-  --fava-link-selected: #{$color-base-selected-text-background};
+  --#{$project}-link: #{$petrol};
+  --#{$project}-link-hover: #{$darkpetrol};
+  --#{$project}-link-focus: #{$darkpetrol};
+  --#{$project}-link-active: #{$darkpetrol};
+  --#{$project}-link-selected: #{$darkpetrol};
 
-  --fava-decoration: #{$color-base-link-underline};
-  --fava-decoration-hover: #{$color-base-background};
-  --fava-decoration-focus: #{$color-base-background};
-  --fava-decoration-active: #{$color-base-link-underline-hover};
-  --fava-decoration-selected: #{$color-base-selected-text-background};
+  $link-invert: $lightergray;
+  $link-invert-hover: $white;
+  $link-invert-focus: $white;
+  $link-invert-active: $white;
+  $link-invert-selected: $white;
 
-  --fava-link-invert: #{$color-base-link-invert};
-  --fava-link-invert-hover: #{$color-base-background};
-  --fava-link-invert-focus: #{$color-base-background};
-  --fava-link-invert-active: #{$color-base-link-hover-invert};
-  --fava-link-invert-selected: #{$color-base-selected-text-background};
+  // Decoration
+  --#{$project}-decoration: #{$color-base-link-underline};
+  --#{$project}-decoration-hover: #{$color-base-link-underline-hover};
+  --#{$project}-decoration-focus: #{$color-base-link-underline-hover};
+  --#{$project}-decoration-active: #{$color-base-link-underline-hover};
+  --#{$project}-decoration-selected: #{$color-base-selected-text-background};
 
-  --fava-decoration-invert: #{$color-base-link-underline-invert};
-  --fava-decoration-invert-hover: #{$color-base-background};
-  --fava-decoration-invert-focus: #{$color-base-background};
-  --fava-decoration-invert-active: #{$color-base-link-underline-hover-invert};
-  --fava-decoration-invert-selected: #{$color-base-selected-text-background};
+  $decoration-invert: $petrol;
+  $decoration-invert-hover: $lightgray;
+  $decoration-invert-focus: $lightgray;
+  $decoration-invert-active: $lightgray;
+  $decoration-invert-selected: $color-base-selected-text-background;
 
   // Heading
-  --fava-heading: #{$petrol};
-  --fava-heading-hover: #{$color-base-background};
-  --fava-heading-focus: #{$color-base-background};
-  --fava-heading-active: #{$petrol};
-  --fava-heading-selected: #{$color-base-selected-text-background};
+  --#{$project}-heading: #{$petrol};
+  --#{$project}-heading-hover: #{$color-base-background};
+  --#{$project}-heading-focus: #{$color-base-background};
+  --#{$project}-heading-active: #{$petrol};
+  --#{$project}-heading-selected: #{$color-base-selected-text-background};
 
-  --fava-heading-invert: #{$lightergray};
-  --fava-heading-invert-hover: #{$color-base-background};
-  --fava-heading-invert-focus: #{$color-base-background};
-  --fava-heading-invert-active: #{$petrol};
-  --fava-heading-invert-selected: #{$color-base-selected-text-background};
+  $heading-invert: $lightergray;
+  $heading-invert-hover: $lightergray;
+  $heading-invert-focus: $lightergray;
+  $heading-invert-active: $petrol;
+  $heading-invert-selected: $color-base-selected-text-background;
 
   // Border
-  --fava-border: #{$lightgray};
-  --fava-border-hover: #{$darkpetrol};
-  --fava-border-focus: #{$darkpetrol};
-  --fava-border-active: #{$darkpetrol};
-  --fava-border-selected: #{$darkpetrol};
+  --#{$project}-border: #{$lightgray};
+  --#{$project}-border-hover: #{$lightgray};
+  --#{$project}-border-focus: #{$darkpetrol};
+  --#{$project}-border-active: #{$darkpetrol};
+  --#{$project}-border-selected: #{$darkpetrol};
 
-  --fava-border-invert: #{$darkpetrol};
-  --fava-border-invert-hover: #{$petrol};
-  --fava-border-invert-focus: #{$petrol};
-  --fava-border-invert-active: #{$petrol};
-  --fava-border-invert-selected: #{$petrol};
+  $border-invert: $lightgray;
+  $border-invert-hover: $white;
+  $border-invert-focus: $white;
+  $border-invert-active: $white;
+  $border-invert-selected: $lightgray;
 
   // Shadow
-  --fava-shadow: #{$petrol};
-  --fava-shadow-invert: #{$petrol};
+  --#{$project}-shadow: #{$petrol};
+
+  $shadow-invert: $petrol;
 
   // Logo
-  --fava-logo: #{$petrol};
-  --fava-logo-start: #{$petrol};
-  --fava-logo-end: #{$darkpetrol};
+  --#{$project}-logo: #{$petrol};
+  --#{$project}-logo-start: #{$petrol};
+  --#{$project}-logo-end: #{$darkpetrol};
 
-  --fava-logo-invert: #{$petrol};
-  --fava-logo-invert-start: #{$petrol};
-  --fava-logo-invert-end: #{$darkpetrol};
+  $logo-invert: $white;
+  $logo-invert-start: $white;
+  $logo-invert-end: $white;
 
   // Icon
-  --fava-icon: #{$petrol};
-  --fava-icon-start: #{$petrol};
-  --fava-icon-end: #{$darkpetrol};
+  --#{$project}-icon: #{$petrol};
+  --#{$project}-icon-start: #{$petrol};
+  --#{$project}-icon-end: #{$darkpetrol};
 
-  --fava-icon-invert: #{$petrol};
-  --fava-icon-invert-start: #{$petrol};
-  --fava-icon-invert-end: #{$darkpetrol};
+  $icon-invert: $lightergray;
+  $icon-invert-start: $lightergray;
+  $icon-invert-end: $lightgray;
 
   // Status, Good, Strong (limegreen)
-  --fava-text-status: #{xxx};
-  --fava-background-status: #{xxx};
+  // --fava-text-status: #{xxx};
+  // --fava-background-status: #{xxx};
 
-  --fava-text-invert-status: #{xxx};
-  --fava-background-invert-status: #{xxx};
+  // --fava-text-invert-status: #{xxx};
+  // --fava-background-invert-status: #{xxx};
 
   // Warning, Fair (gold)
-  --fava-text-warning: #{xxx};
-  --fava-background-warning: #{xxx};
+  // --fava-text-warning: #{xxx};
+  // --fava-background-warning: #{xxx};
 
-  --fava-text-invert-warning: #{xxx};
-  --fava-background-invert-warning: #{xxx};
+  // --fava-text-invert-warning: #{xxx};
+  // --fava-background-invert-warning: #{xxx};
 
   // Error, Weak (firebrick)
-  --fava-text-error: #{xxx};
-  --fava-background-error: #{xxx};
+  // --fava-text-error: #{xxx};
+  // --fava-background-error: #{xxx};
 
-  --fava-text-invert-error: #{xxx};
-  --fava-background-invert-error: #{xxx};
+  // --fava-text-invert-error: #{xxx};
+  // --fava-background-invert-error: #{xxx};
 
   @media (prefers-color-scheme: dark) {
     // Text
-    --fava-text: var(--fava-text-invert);
-    --fava-text-accent: var(--fava-text-invert-accent);
-    --fava-text-selected: var(--fava-text-invert-selected);
+    --fava-text: #{$text-invert};
+    --fava-text-selected: #{$text-invert-selected};
+
+    // Accent
+    --fava-accent: #{$accent-invert};
+    --fava-accent-selected: #{$accent-invert-selected};
 
     // Background
-    --fava-background: var(--fava-background-invert);
-    --fava-background-hover: var(--fava-background-invert-hover);
-    --fava-background-focus: var(--fava-background-invert-focus);
-    --fava-background-active: var(--fava-background-invert-active);
-    --fava-background-selected: var(--fava-background-invert-selected);
+    --fava-background: #{$background-invert};
+    --fava-background-hover: #{$background-invert-hover};
+    --fava-background-focus: #{$background-invert-focus};
+    --fava-background-active: #{$background-invert-active};
+    --fava-background-selected: #{$background-invert-selected};
+
+    // Header
+    --fava-header: #{$header-invert};
 
     // Links
-    --fava-link: var(--fava-link-invert);
-    --fava-link-hover: var(--fava-link-invert-hover);
-    --fava-link-focus: var(--fava-link-invert-focus);
-    --fava-link-active: var(--fava-link-invert-active);
-    --fava-link-selected: var(--fava-link-invert-selected);
+    --fava-link: #{$link-invert};
+    --fava-link-hover: #{$link-invert-hover};
+    --fava-link-focus: #{$link-invert-focus};
+    --fava-link-active: #{$link-invert-active};
+    --fava-link-selected: #{$link-invert-selected};
 
-    --fava-decoration: var(--fava-decoration-invert);
-    --fava-decoration-hover: var(--fava-decoration-invert-hover);
-    --fava-decoration-focus: var(--fava-decoration-invert-focus);
-    --fava-decoration-active: var(--fava-decoration-invert-active);
-    --fava-decoration-selected: var(--fava-decoration-invert-selected);
+    // Decoration
+    --fava-decoration: #{$decoration-invert};
+    --fava-decoration-hover: #{$decoration-invert-hover};
+    --fava-decoration-focus: #{$decoration-invert-focus};
+    --fava-decoration-active: #{$decoration-invert-active};
+    --fava-decoration-selected: #{$decoration-invert-selected};
 
     // Heading
-    --fava-heading: var(--fava-heading-invert);
-    --fava-heading-hover: var(--fava-heading-invert-hover);
-    --fava-heading-focus: var(--fava-heading-invert-focus);
-    --fava-heading-active: var(--fava-heading-invert-active);
-    --fava-heading-selected: var(--fava-heading-invert-selected);
+    --fava-heading: #{$heading-invert};
+    --fava-heading-hover: #{$heading-invert-hover};
+    --fava-heading-focus: #{$heading-invert-focus};
+    --fava-heading-active: #{$heading-invert-active};
+    --fava-heading-selected: #{$heading-invert-selected};
 
     // Border
-    --fava-border: var(--fava-border-invert);
-    --fava-border-hover: var(--fava-border-invert-hover);
-    --fava-border-focus: var(--fava-border-invert-focus);
-    --fava-border-active: var(--fava-border-invert-active);
-    --fava-border-selected: var(--fava-border-invert-selected);
+    --fava-border: #{$border-invert};
+    --fava-border-hover: #{$border-invert-hover};
+    --fava-border-focus: #{$border-invert-focus};
+    --fava-border-active: #{$border-invert-active};
+    --fava-border-selected: #{$border-invert-selected};
 
     // Shadow
-    --fava-shadow: var(--fava-shadow-invert);
+    --fava-shadow: #{$shadow-invert};
+
+    // Logo
+    --fava-logo: #{$logo-invert};
+    --fava-logo-start: #{$logo-invert-start};
+    --fava-logo-end: #{$logo-invert-end};
+
+    // Icon
+    --fava-icon: #{$icon-invert};
+    --fava-icon-start: #{$icon-invert-start};
+    --fava-icon-end: #{$icon-invert-end};
 
     img {
-      filter: brightness(90%);
+      filter: brightness(88%);
     }
   }
 }

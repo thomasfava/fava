@@ -47,7 +47,7 @@
     margin-inline: 0.1rem;
 
     svg {
-      fill: $color-base-link;
+      fill: var(--fava-accent);
     }
   }
 }
