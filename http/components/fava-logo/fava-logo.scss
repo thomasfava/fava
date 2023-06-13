@@ -1,23 +1,42 @@
 @import "sass-essentials";
 
 #fava-gradient {
-  --color-stop-1: #0C7489;
-  --color-stop-2: #0C7489;
-  --color-stop-3: #2E6171;
+  --color-stop-1: var(--fava-logo-start);
+  --color-stop-2: var(--fava-logo-start);
+  --color-stop-3: var(--fava-logo-end);
 }
 
 .fava-logo {
-  $logo-width: 500rem;
-  $logo-height: 164rem;
-  $logo-factor: 0.046;
+  $logo-width: 45rem;
+  $logo-height: 20rem;
+  $logo-factor: 0.44;
 
   display: block;
   width: $logo-width * $logo-factor;
   height: $logo-height * $logo-factor;
-  fill: $petrol;
+  fill: var(--fava-logo);
   margin: 0 auto 4rem;
+  transform-origin: center;
 
   @supports(--css: variables) {
-    fill: url(#fava-gradient) $petrol;
+    fill: url(#fava-gradient) var(--fava-logo);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    transform: scale(0.9);
+  }
+
+  &__dark {
+    fill: transparent;
+
+    @media (prefers-color-scheme: dark) {
+      fill: var(--fava-logo-invert) !important;
+    }
+  }
+
+  &__light {
+    @media (prefers-color-scheme: dark) {
+      fill: transparent;
+    }
   }
 }
