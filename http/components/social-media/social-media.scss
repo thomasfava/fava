@@ -9,6 +9,8 @@
 
   text-align: center;
   margin: 12rem auto 0;
+  text-wrap: balance;
+  width: clamp(28vw, 64vw, 58rem);
 
   // Children
   &__item {
