@@ -22,6 +22,11 @@
     > *:last-child {
       margin-bottom: 0;
     }
+
+    &__small {
+      color: var(--fava-accent);
+      font-size: $base-font-size-smaller;
+    }
   }
 
   &__full {
