@@ -195,4 +195,103 @@
       filter: brightness(88%);
     }
   }
+
+  // Peirt theme
+  .is-peirt-theme {
+    $peirt-highlight: #e90034;
+    $peirt-dark: #ca0000;
+
+    // Text
+    --fava-text: #{$peirt-dark};
+    --fava-text-selected: #{$peirt-highlight};
+
+    // Accent
+    --fava-accent: #{$peirt-highlight};
+    --fava-accent-selected: #{$peirt-highlight};
+
+    // Header
+    --fava-header: #{$peirt-highlight};
+
+    // Links
+    --fava-link: #{$peirt-highlight};
+    --fava-link-hover: #{$peirt-dark};
+    --fava-link-focus: #{$peirt-dark};
+    --fava-link-active: #{$peirt-dark};
+    --fava-link-selected: #{$peirt-dark};
+
+    // Decoration
+    //--fava-decoration: #{$decoration-invert};
+    --fava-decoration-hover: #{$peirt-highlight};
+    //--fava-decoration-focus: #{$decoration-invert-focus};
+    //--fava-decoration-active: #{$decoration-invert-active};
+    //--fava-decoration-selected: #{$decoration-invert-selected};
+
+    // Heading
+    --fava-heading: #{$peirt-highlight};
+    //--fava-heading-hover: #{$heading-invert-hover};
+    //--fava-heading-focus: #{$heading-invert-focus};
+    --fava-heading-active: #{$peirt-highlight};
+    //--fava-heading-selected: #{$heading-invert-selected};
+
+    // Border
+    //--fava-border: #{$border-invert};
+    //--fava-border-hover: #{$border-invert-hover};
+    --fava-border-focus: #{$peirt-dark};
+    --fava-border-active: #{$peirt-dark};
+    --fava-border-selected: #{$peirt-dark};
+
+    // Shadow
+    --fava-shadow: #{$peirt-dark};
+
+    @media (prefers-color-scheme: dark) {
+      // Text
+      --fava-text: #{$text-invert};
+      --fava-text-selected: #{$text-invert-selected};
+
+      // Accent
+      --fava-accent: #{$accent-invert};
+      --fava-accent-selected: #{$accent-invert-selected};
+
+      // Background
+      --fava-background: #{$peirt-dark};
+      --fava-background-hover: #{$peirt-dark};
+      --fava-background-focus: #{$peirt-dark};
+      --fava-background-active: #{$peirt-dark};
+      --fava-background-selected: #{$peirt-highlight};
+
+      // Header
+      --fava-header: #{$peirt-dark};
+
+      // Links
+      --fava-link: #{$link-invert};
+      --fava-link-hover: #{$link-invert-hover};
+      --fava-link-focus: #{$link-invert-focus};
+      --fava-link-active: #{$link-invert-active};
+      --fava-link-selected: #{$link-invert-selected};
+
+      // Decoration
+      --fava-decoration: #{$peirt-highlight};
+      --fava-decoration-hover: #{$decoration-invert-hover};
+      --fava-decoration-focus: #{$decoration-invert-focus};
+      --fava-decoration-active: #{$decoration-invert-active};
+      --fava-decoration-selected: #{$decoration-invert-selected};
+
+      // Heading
+      --fava-heading: #{$heading-invert};
+      --fava-heading-hover: #{$heading-invert-hover};
+      --fava-heading-focus: #{$heading-invert-focus};
+      --fava-heading-active: #{$peirt-highlight};
+      --fava-heading-selected: #{$heading-invert-selected};
+
+      // Border
+      --fava-border: #{$border-invert};
+      --fava-border-hover: #{$border-invert-hover};
+      --fava-border-focus: #{$border-invert-focus};
+      --fava-border-active: #{$border-invert-active};
+      --fava-border-selected: #{$border-invert-selected};
+
+      // Shadow
+      --fava-shadow: #{$peirt-dark};
+    }
+  }
 }
