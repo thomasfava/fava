@@ -103,8 +103,7 @@
 
       > * {
         object-fit: cover;
-        min-height: 20rem;
-        max-height: 26rem;
+        height: clamp(16rem, 40vw, 20rem);
         width: 100%;
 
         @supports (clip-path: initial) {
