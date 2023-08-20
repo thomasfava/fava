@@ -6,20 +6,20 @@
 
   max-width: 100%;
   margin-block: 4rem;
-  border: thin solid $lightgray;
+  border: thin solid var(--fava-border);
   line-height: 0;
   border-radius: 0.6rem;
   overflow: hidden;
 
   &:hover,
   &:focus-within {
-    border-color: $petrol;
+    border-color: var(--fava-border-active);
   }
 
   &--audio {}
 
   &--video {
-    aspect-ratio: 16/9;
+    aspect-ratio: 15.8/9;
     margin-block: 4rem;
     margin-inline: auto;
 
