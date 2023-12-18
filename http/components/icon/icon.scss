@@ -10,8 +10,8 @@
   $icon-size: 3.4rem;
 
   display: block;
-  height: $icon-size;
-  width: $icon-size;
+  block-size: $icon-size;
+  inline-size: $icon-size;
   margin: auto;
 
   &__path {

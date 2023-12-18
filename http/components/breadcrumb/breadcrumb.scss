@@ -41,8 +41,8 @@
   &__icon {
     display: inline-block;
     line-height: 0;
-    width: $breadcrumb-icons-size;
-    height: $breadcrumb-icons-size;
+    inline-size: $breadcrumb-icons-size;
+    block-size: $breadcrumb-icons-size;
     transform: translateY(-0.1rem);
     margin-inline: 0.1rem;
 

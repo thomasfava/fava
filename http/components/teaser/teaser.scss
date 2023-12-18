@@ -51,7 +51,8 @@
 
   &__content {
     flex-grow: 1;
-    padding: 1.8rem 2rem 3.2rem;
+    padding-block: 1.8rem 3.2rem;
+    padding-inline: 2rem;
     filter: none;
 
     &::after {
@@ -77,9 +78,9 @@
 
   &__image {
     order: -1;
-    height: 14rem;
+    block-size: 14rem;
     overflow: hidden;
-    border-bottom: $border-size solid var(--fava-border);
+    border-block-end: $border-size solid var(--fava-border);
 
     .overview__item:nth-child(even) & {
       // Top left corner
@@ -87,20 +88,20 @@
     }
 
     .teaser--sound & {
-      height: auto;
+      block-size: auto;
     }
 
     .overview__item--full &,
     .overview--large & {
-      height: 20rem;
+      block-size: 20rem;
     }
 
     img {
       @include transition(all);
 
       object-fit: cover;
-      height: 100%;
-      width: 100%;
+      block-size: 100%;
+      inline-size: 100%;
 
       .teaser--sound & {
         aspect-ratio: 1;
@@ -119,10 +120,7 @@
     &::before {
       position: absolute;
       content: '';
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+      inset: 0;
       z-index: 1;
     }
   }

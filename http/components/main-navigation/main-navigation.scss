@@ -24,7 +24,7 @@
     @include link(inverse);
 
     text-decoration: none;
-    border-bottom: thin solid transparent;
+    border-block-end: thin solid transparent;
     opacity: 0.9;
 
     &:focus {

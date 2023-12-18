@@ -4,7 +4,7 @@
   @include transition(cosmetic);
   @include shadow();
 
-  max-width: 100%;
+  max-inline-size: 100%;
   margin-block: 4rem;
   border: thin solid var(--fava-border);
   line-height: 0;
@@ -24,8 +24,8 @@
     margin-inline: auto;
 
     iframe, object, embed {
-      width: 100%;
-      height: 100%;
+      inline-size: 100%;
+      block-size: 100%;
     }
   }
 }

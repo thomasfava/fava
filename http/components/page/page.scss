@@ -5,27 +5,27 @@
 
   // Header
   &__header {
-    width: 100%;
+    inline-size: 100%;
   }
 
   // Main
   &__main {
-    width: 100%;
+    inline-size: 100%;
   }
 
   // Aside
   &__aside {
-    width: 100%;
-    margin-bottom: 4.8rem;
+    inline-size: 100%;
+    margin-block-end: 4.8rem;
 
     & > * {
-      margin-top: 0;
+      margin-block-start: 0;
     }
   }
 
   // Footer
   &__footer {
-    width: 100%;
-    margin-top: auto;
+    inline-size: 100%;
+    margin-block-start: auto;
   }
 }

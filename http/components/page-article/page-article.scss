@@ -1,26 +1,26 @@
 @import "sass-essentials";
 
 .page-article {
-  margin-bottom: 4.8rem;
+  margin-block-end: 4.8rem;
 
   &--home {
-    padding-top: 3.2rem; // Breadcrumb
+    padding-block-start: 3.2rem; // Breadcrumb
     margin-inline: auto;
-    max-width: 58rem;
-    margin-bottom: 7.2rem;
+    max-inline-size: 58rem;
+    margin-block-end: 7.2rem;
   }
 
   > *:first-child {
-    margin-top: 0;
+    margin-block-start: 0;
   }
 
   &__content {
     > *:first-child {
-      margin-top: 0;
+      margin-block-start: 0;
     }
 
     > *:last-child {
-      margin-bottom: 0;
+      margin-block-end: 0;
     }
 
     &__small {
@@ -30,7 +30,7 @@
   }
 
   &__full {
-    width: 100%;
+    inline-size: 100%;
   }
 
   &--intro {
@@ -38,20 +38,19 @@
 
     display: flex;
     flex-wrap: wrap;
-    margin-left: -$article-gutter;
-    margin-right: -$article-gutter;
-    margin-bottom: 0;
+    margin-inline: -$article-gutter;
+    margin-block-end: 0;
 
     > * {
-      padding-left: $article-gutter;
-      padding-right: $article-gutter;
-      margin: 1.2rem auto;
+      padding-inline: $article-gutter;
+      margin-block: 1.2rem;
+      margin-inline: auto;
     }
 
     .page-article__content {
-      margin-left: 0;
+      margin-inline-start: 0;
       flex-basis: 36ch;
-      min-width: 30rem;
+      min-inline-size: 30rem;
       flex-grow: 1;
     }
 
@@ -61,7 +60,7 @@
       flex-grow: 8;
 
       p:last-of-type {
-        margin-bottom: auto;
+        margin-block-end: auto;
       }
     }
 
@@ -73,16 +72,16 @@
     .page-article__visual--sound {
       flex-grow: 1;
       flex-basis: 30rem;
-      padding-top: 1.2rem;
+      padding-block-start: 1.2rem;
       align-self: end;
-      max-width: 38rem;
+      max-inline-size: 38rem;
 
       > * {
         @include shadow();
 
         border: thin solid var(--fava-border);
         object-fit: cover;
-        width: 100%;
+        inline-size: 100%;
       }
     }
 
@@ -98,13 +97,13 @@
 
       flex-grow: 1;
       flex-basis: 28rem;
-      padding-top: 1.2rem;
+      padding-block-start: 1.2rem;
       filter: drop-shadow(0 0 0.3rem rgba(red($darkpetrol), green($darkpetrol), blue($darkpetrol), 0.1));
 
       > * {
         object-fit: cover;
         height: clamp(16rem, 40vw, 20rem);
-        width: 100%;
+        inline-size: 100%;
 
         @supports (clip-path: initial) {
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - #{$pythagoras-inner}), calc(100% - #{$pythagoras-inner}) 100%, 0 100%);
@@ -118,7 +117,7 @@
 
   ul:not([class]) {
   list-style: none;
-  padding-left: 1.8rem;
+  padding-inline-start: 1.8rem;
 
     li {
       position: relative;
@@ -127,10 +126,10 @@
         content: "";
         background-color: var(--fava-accent);
         position: absolute;
-        top: 0.66em;
-        left: -1.6rem;
-        width: 0.5rem;
-        height: 0.5rem;
+        inset-block-start: 0.66em;
+        inset-inline-start: -1.6rem;
+        inline-size: 0.5rem;
+        block-size: 0.5rem;
         border-radius: 50%;
       }
     }
@@ -138,18 +137,18 @@
 
   ol {
     list-style: none;
-    padding-left: 0;
+    padding-inline-start: 0;
     counter-reset: custom-counter;
 
     > li {
       counter-increment: custom-counter;
-      padding-left: 0;
+      padding-inline-start: 0;
 
       &::before {
         @include font-size(h3);
         content: counter(custom-counter) ". ";
         display: block;
-        margin-bottom: 0.4rem;
+        margin-block-end: 0.4rem;
         color: var(--fava-accent);
       }
     }
