@@ -142,6 +142,10 @@
       }
     }
 
+    @media (prefers-reduced-motion: reduce) {
+      transform: translateY(0);
+    }
+
     .teaser__content::after {
       background-color: var(--fava-background-focus);
     }

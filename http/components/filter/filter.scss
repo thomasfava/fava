@@ -26,6 +26,10 @@
       border-color: var(--fava-border-focus);
       background-color: var(--fava-background-focus);
       transform: translateY(-0.1rem);
+
+      @media (prefers-reduced-motion: reduce) {
+        transform: translateY(0);
+      }
     }
 
 
@@ -37,6 +41,10 @@
       &:hover,
       &:focus {
         transform: translateY(-0.1rem);
+
+        @media (prefers-reduced-motion: reduce) {
+          transform: translateY(0);
+        }
       }
     }
   }
