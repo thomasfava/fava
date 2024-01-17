@@ -1,0 +1,26 @@
+@import "sass-essentials";
+
+.external-link {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.1em;
+  margin-inline-end: 0.1em;
+
+  // <svg>
+  &__icon {
+    block-size: 1ex;
+
+    path {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  }
+
+  &__info {
+    @include visually-hidden();
+  }
+}
