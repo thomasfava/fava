@@ -48,6 +48,10 @@
 
     svg {
       fill: var(--fava-accent);
+
+      &:dir(rtl) {
+        scale: -1 1;
+      }
     }
   }
 }
