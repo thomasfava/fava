@@ -42,6 +42,10 @@
       grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     }
 
+    .overview--condense & {
+      grid-template-columns: repeat(auto-fill, minmax(clamp(12rem, 32vw, 22rem), 1fr));
+    }
+
     .overview--tiny & {
       grid-template-columns: repeat(auto-fill, minmax(clamp(12rem, 32vw, 18rem), 1fr));
     }
