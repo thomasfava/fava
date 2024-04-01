@@ -23,3 +23,4 @@ Redirect 301 /images/salade-nutcoise-open-graph.jpg https://www.knaptand.be/imag
 Redirect 301 /images/spitbull-open-graph.jpg https://www.knaptand.be/images/spitbull-open-graph.jpg
 Redirect 301 /images/varkenswangen-open-graph.jpg https://www.knaptand.be/images/varkenswangen-open-graph.jpg
 Redirect 301 /images/veau-biere-open-graph.jpg https://www.knaptand.be/images/veau-biere-open-graph.jpg
+ErrorDocument 404 /404.html
