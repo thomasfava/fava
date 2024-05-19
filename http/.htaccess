@@ -3,16 +3,16 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https
 SetEnvIf X-Forwarded-Proto "https" HTTPS=on
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-Redirect 301 /taste/aymonaise/ https://www.knaptand.be/recepten/aymonaise/
-Redirect 301 /taste/creme-quarantraise/ https://www.knaptand.be/recepten/creme-quarantraise/
-Redirect 301 /taste/dlucers/ https://www.knaptand.be/recepten/dlucers/
-Redirect 301 /taste/gevulde-kalkoen-met-champignonsaus/ https://www.knaptand.be/recepten/gevulde-kalkoen-met-champignonsaus/
-Redirect 301 /taste/paardenworsten/ https://www.knaptand.be/recepten/paardenworsten/
-Redirect 301 /taste/rode-duvel/ https://www.knaptand.be/recepten/rode-duvel/
-Redirect 301 /taste/salade-nutcoise/ https://www.knaptand.be/recepten/salade-nutcoise/
-Redirect 301 /taste/spitbull/ https://www.knaptand.be/recepten/spitbull/
-Redirect 301 /taste/varkenswangen-met-malheur-12/ https://www.knaptand.be/recepten/varkenswangen-met-malheur-12/
-Redirect 301 /taste/veau-biere/ https://www.knaptand.be/recepten/veau-biere/
+Redirect 301 /taste/aymonaise/ https://www.knaptand.be/nl/recepten/aymonaise/
+Redirect 301 /taste/creme-quarantraise/ https://www.knaptand.be/nl/recepten/creme-quarantraise/
+Redirect 301 /taste/dlucers/ https://www.knaptand.be/nl/recepten/dlucers/
+Redirect 301 /taste/gevulde-kalkoen-met-champignonsaus/ https://www.knaptand.be/nl/recepten/gevulde-kalkoen-met-champignonsaus/
+Redirect 301 /taste/paardenworsten/ https://www.knaptand.be/nl/recepten/paardenworsten/
+Redirect 301 /taste/rode-duvel/ https://www.knaptand.be/nl/recepten/rode-duvel/
+Redirect 301 /taste/salade-nutcoise/ https://www.knaptand.be/nl/recepten/salade-nutcoise/
+Redirect 301 /taste/spitbull/ https://www.knaptand.be/nl/recepten/spitbull/
+Redirect 301 /taste/varkenswangen-met-malheur-12/ https://www.knaptand.be/nl/recepten/varkenswangen-met-malheur-12/
+Redirect 301 /taste/veau-biere/ https://www.knaptand.be/nl/recepten/veau-biere/
 Redirect 301 /images/aymonaise-open-graph.jpg https://www.knaptand.be/images/aymonaise-open-graph.jpg
 Redirect 301 /images/creme-quarantraise-open-graph.jpg https://www.knaptand.be/images/creme-quarantraise-open-graph.jpg
 Redirect 301 /images/dlucers-open-graph.jpg https://www.knaptand.be/images/dlucers-open-graph.jpg
