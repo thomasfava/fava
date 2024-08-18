@@ -1,0 +1,40 @@
+@import "sass-essentials";
+
+.price-indicator {
+  --_folded-factor: -.2rem;
+
+  margin-block: auto 0;
+  font-size: clamp(1.2rem, 2vw, 1.3rem);
+  text-transform: lowercase;
+
+  @supports (clip-path: initial) {
+    @include shadow();
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    inline-size: 11.25em;
+    z-index: 1;
+    block-size: 1.4lh;
+    margin-block-start: 0;
+    padding-inline: 1.6rem;
+    background-color: var(--fava-background);
+    border: thin solid var(--fava-border);
+    clip-path: polygon(100% calc(100% - var(--_folded-factor)), 100% 100%, calc(100% - var(--_folded-factor)) calc(100% - var(--_folded-factor)), var(--_folded-factor) calc(100% - var(--_folded-factor)), 0 100%, 0 calc(100% - var(--_folded-factor)), 999px calc(100% - var(--_folded-factor) - 999px), calc(100% - 999px) calc(100% - var(--_folded-factor) - 999px));
+    transform: translate(calc((1 - cos(45deg)) * 100%), -100%) rotate(45deg);
+    transform-origin: 0 100%;
+  }
+
+  &__price {
+    font-weight: 500;
+    color: var(--fava-accent);
+    font-size: 110%;
+
+    @supports (clip-path: initial) {
+      margin-inline: .3em;
+    }
+  }
+}
