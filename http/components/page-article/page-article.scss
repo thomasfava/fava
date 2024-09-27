@@ -113,8 +113,8 @@
   &--contact {}
 
   ul:not([class]) {
-  list-style: none;
-  padding-inline-start: 1.8rem;
+    list-style-type: '';
+    padding-inline-start: 1.8rem;
 
     li {
       position: relative;
@@ -133,7 +133,7 @@
   }
 
   ol {
-    list-style: none;
+    list-style-type: '';
     padding-inline-start: 0;
     counter-reset: custom-counter;
 
