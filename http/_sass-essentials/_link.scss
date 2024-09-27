@@ -15,6 +15,9 @@
       color: $color-base-link-hover-invert;
       text-decoration-color: $color-base-link-underline-hover-invert;
     }
+    &[aria-current*="page"] {
+      text-decoration-color: $color-base-link-underline-hover-invert;
+    }
   } @else {
     // Default
     &, &:active {
@@ -24,6 +27,9 @@
     &:hover,
     &:focus {
       color: var(--fava-link-hover);
+      text-decoration-color: var(--fava-decoration-hover);
+    }
+    &[aria-current*="page"] {
       text-decoration-color: var(--fava-decoration-hover);
     }
   }
