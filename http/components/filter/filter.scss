@@ -16,7 +16,8 @@
     padding-block: 0 0.2rem;
     padding-inline: 1.2rem;
     border-radius: 1.2rem;
-    border: thin solid var(--fava-border);
+    border: thin solid var(--fava-border-interactive);
+    font-weight: 300;
 
     &:hover,
     &:focus,

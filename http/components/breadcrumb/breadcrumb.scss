@@ -26,15 +26,10 @@
   &__link {
     display: inline-block;
     padding-block: 0.4rem;
-    opacity: 0.9;
+    font-weight: 300;
 
     &--current {
       text-decoration: none;
-    }
-
-    &:hover,
-    &:focus {
-      opacity: 1;
     }
   }
 

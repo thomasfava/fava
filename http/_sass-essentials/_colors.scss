@@ -154,8 +154,8 @@ $color-base-background: $lightergray;
 
 $color-base-link: map-get($colors, "primary");
 $color-base-link-hover: map-get($colors-complementary, "primary");
-$color-base-link-underline: lighten($color-base-link, 62%);
-$color-base-link-underline-hover: $lightgray;
+$color-base-link-underline: lighten($color-base-link, 11%);
+$color-base-link-underline-hover: lighten($color-base-link, 2%);
 
 $color-base-text-invert: $lightgray;
 $color-base-background-invert: map-get($colors, "primary");
