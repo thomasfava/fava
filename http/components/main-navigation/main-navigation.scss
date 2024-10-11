@@ -20,9 +20,9 @@
   }
 
   &__link {
-    @include font-weight(500);
     @include link(inverse);
 
+    font-weight: 500;
     text-decoration: none;
     border-block-end: thin solid transparent;
     opacity: 0.9;

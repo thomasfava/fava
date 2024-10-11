@@ -76,9 +76,9 @@
 
   // Border
   --#{$project}-border: #{$lightgray};
-  --#{$project}-border-interactive: #{$color-base-link-underline};
+  --#{$project}-border-interactive: #{$lightpetrol};
   --#{$project}-border-hover: #{$lightgray};
-  --#{$project}-border-focus: #{$darkpetrol};
+  --#{$project}-border-focus: #{$petrol};
   --#{$project}-border-active: #{$darkpetrol};
   --#{$project}-border-selected: #{$darkpetrol};
 
