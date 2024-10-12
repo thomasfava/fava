@@ -55,10 +55,10 @@
   --#{$project}-decoration-active: #{$color-base-link-underline-hover};
   --#{$project}-decoration-selected: #{$color-base-selected-text-background};
 
-  $decoration-invert: $petrol;
-  $decoration-invert-hover: $lightgray;
-  $decoration-invert-focus: $lightgray;
-  $decoration-invert-active: $lightgray;
+  $decoration-invert: $lightergray;
+  $decoration-invert-hover: $white;
+  $decoration-invert-focus: $white;
+  $decoration-invert-active: $white;
   $decoration-invert-selected: $color-base-selected-text-background;
 
   // Heading
@@ -223,7 +223,7 @@
     --fava-link-selected: #{$peirt-dark};
 
     // Decoration
-    //--fava-decoration: #{$decoration-invert};
+    --fava-decoration: #{$peirt-highlight};
     --fava-decoration-hover: #{$peirt-highlight};
     //--fava-decoration-focus: #{$decoration-invert-focus};
     //--fava-decoration-active: #{$decoration-invert-active};
@@ -238,6 +238,7 @@
 
     // Border
     //--fava-border: #{$border-invert};
+    --fava-border-interactive: #{$peirt-highlight};
     //--fava-border-hover: #{$border-invert-hover};
     --fava-border-focus: #{$peirt-dark};
     --fava-border-active: #{$peirt-dark};
@@ -273,7 +274,7 @@
       --fava-link-selected: #{$link-invert-selected};
 
       // Decoration
-      --fava-decoration: #{$peirt-highlight};
+      --fava-decoration: #{$decoration-invert};
       --fava-decoration-hover: #{$decoration-invert-hover};
       --fava-decoration-focus: #{$decoration-invert-focus};
       --fava-decoration-active: #{$decoration-invert-active};
@@ -288,6 +289,7 @@
 
       // Border
       --fava-border: #{$border-invert};
+      --fava-border-interactive: #{$border-invert-interactive};
       --fava-border-hover: #{$border-invert-hover};
       --fava-border-focus: #{$border-invert-focus};
       --fava-border-active: #{$border-invert-active};
