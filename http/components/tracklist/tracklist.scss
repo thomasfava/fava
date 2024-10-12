@@ -39,7 +39,16 @@
     color: var(--fava-accent);
   }
 
-  &__title {}
+  &__title {
+
+    .tracklist__item:has(.tracklist__label) & {
+      margin-inline-end: .5ch;
+    }
+
+    .tracklist__item:has(.tracklist__version) & {
+      margin-inline-end: 0;
+    }
+  }
 
   &__artist:not(:empty) + &__title:not(:empty) {
     &::before {
@@ -49,11 +58,14 @@
 
   &__version {
     color: var(--fava-accent);
+
+    .tracklist__item:has(.tracklist__label) & {
+      margin-inline-end: .5ch;
+    }
   }
 
   &__label {
     color: var(--fava-accent);
-    margin-inline-start: .5ch;
     font-size: $base-font-size-smaller;
   }
 }

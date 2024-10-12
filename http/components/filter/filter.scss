@@ -7,13 +7,14 @@
   flex-wrap: wrap;
   gap: 0.8rem clamp(1.2rem, 2vw, 1.8rem);
   margin-block: 2.4rem 1.2rem;
-  font-size: $h5-font-size;
+  font-size: $h6-font-size;
   text-transform: lowercase;
+  line-height: $base-line-height-heading;
 
   &__link {
     text-decoration: none;
     display: inline-block;
-    padding-block: 0 0.2rem;
+    padding-block: 0.1rem 0.4rem;
     padding-inline: 1.2rem;
     border-radius: 1.2rem;
     border: thin solid var(--fava-border-interactive);
