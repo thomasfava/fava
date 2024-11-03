@@ -39,6 +39,14 @@
       > *  {
         transform: scale(1.08);
       }
+
+      @media (prefers-reduced-motion: reduce) {
+        transform: translateY(0);
+
+        > *  {
+          transform: scale(1.02);
+        }
+      }
     }
 
     &:focus-within,
