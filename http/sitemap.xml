@@ -2,7 +2,7 @@
     <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
     <url>
         <loc>https://fava.be/</loc>
-        <lastmod>2024-10-27T13:15:28+00:00</lastmod>
+        <lastmod>2024-10-31T13:24:47+00:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
@@ -22,12 +22,17 @@
     </url>
     <url>
         <loc>https://fava.be/shop/</loc>
-        <lastmod>2024-10-12T09:37:11+00:00</lastmod>
+        <lastmod>2024-11-13T15:24:43+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://fava.be/sound/more-than-any-laws-allow/</loc>
-        <lastmod>2024-10-28T09:48:27+00:00</lastmod>
+        <loc>https://fava.be/sound/painted-like-the-wings-of-butterflies/</loc>
+        <lastmod>2024-10-28T09:48:41+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://fava.be/sound/the-7th-dimension/</loc>
+        <lastmod>2024-10-28T09:49:01+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
@@ -36,8 +41,8 @@
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://fava.be/sound/painted-like-the-wings-of-butterflies/</loc>
-        <lastmod>2024-10-28T09:48:41+00:00</lastmod>
+        <loc>https://fava.be/sound/the-17th-of-june/</loc>
+        <lastmod>2024-10-28T09:48:57+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
@@ -48,11 +53,6 @@
     <url>
         <loc>https://fava.be/sound/imagine-its-true/</loc>
         <lastmod>2024-10-28T09:48:16+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://fava.be/sound/the-7th-dimension/</loc>
-        <lastmod>2024-10-28T09:49:01+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
@@ -67,62 +67,67 @@
     </url>
     <url>
         <loc>https://fava.be/shop/stickers/</loc>
-        <lastmod>2024-10-12T09:37:14+00:00</lastmod>
+        <lastmod>2024-11-13T15:24:47+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://fava.be/shop/quotes/</loc>
-        <lastmod>2024-10-12T09:37:13+00:00</lastmod>
+        <lastmod>2024-11-13T15:24:47+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://fava.be/shop/t-shirts/</loc>
-        <lastmod>2024-10-12T09:37:14+00:00</lastmod>
+        <lastmod>2024-11-13T15:24:47+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://fava.be/sound/live/</loc>
-        <lastmod>2024-10-28T09:48:25+00:00</lastmod>
+        <lastmod>2024-11-11T12:46:54+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>https://fava.be/sound/mashup/</loc>
-        <lastmod>2024-10-28T09:48:25+00:00</lastmod>
+        <lastmod>2024-11-11T12:46:39+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>https://fava.be/sound/p2b/</loc>
-        <lastmod>2024-10-28T09:48:36+00:00</lastmod>
+        <lastmod>2024-11-11T11:08:35+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>https://fava.be/sound/remember/</loc>
-        <lastmod>2024-10-28T09:48:45+00:00</lastmod>
+        <lastmod>2024-11-11T11:08:23+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>https://fava.be/sound/retro/</loc>
-        <lastmod>2024-10-28T09:48:48+00:00</lastmod>
+        <lastmod>2024-11-11T12:46:29+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>https://fava.be/sound/stream/</loc>
-        <lastmod>2024-10-28T09:48:51+00:00</lastmod>
+        <lastmod>2024-11-11T12:46:16+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>https://fava.be/sound/trance/</loc>
-        <lastmod>2024-10-28T09:49:08+00:00</lastmod>
+        <lastmod>2024-11-11T12:45:58+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>https://fava.be/sound/vintage/</loc>
-        <lastmod>2024-10-28T09:49:11+00:00</lastmod>
+        <lastmod>2024-11-11T12:45:47+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>https://fava.be/sound/vinyl/</loc>
-        <lastmod>2024-10-28T09:49:14+00:00</lastmod>
+        <lastmod>2024-11-11T12:45:37+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://fava.be/sound/more-than-any-laws-allow/</loc>
+        <lastmod>2024-10-28T09:48:27+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
@@ -143,11 +148,6 @@
     <url>
         <loc>https://fava.be/sound/play-the-part/</loc>
         <lastmod>2024-10-28T09:48:45+00:00</lastmod>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>https://fava.be/sound/the-17th-of-june/</loc>
-        <lastmod>2024-10-28T09:48:57+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
@@ -237,7 +237,7 @@
     </url>
     <url>
         <loc>https://fava.be/sound/da-fava-punk/</loc>
-        <lastmod>2024-10-28T09:48:00+00:00</lastmod>
+        <lastmod>2024-10-31T13:21:59+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
@@ -287,7 +287,7 @@
     </url>
     <url>
         <loc>https://fava.be/sound/all-the-way-back-around/</loc>
-        <lastmod>2024-10-28T09:47:56+00:00</lastmod>
+        <lastmod>2024-10-31T13:21:50+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
@@ -322,32 +322,37 @@
     </url>
     <url>
         <loc>https://fava.be/shop/animals/</loc>
-        <lastmod>2024-10-12T09:37:12+00:00</lastmod>
+        <lastmod>2024-11-13T15:24:44+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>https://fava.be/shop/fava/</loc>
-        <lastmod>2024-10-12T09:37:11+00:00</lastmod>
+        <lastmod>2024-11-13T15:24:44+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://fava.be/shop/magnets/</loc>
+        <lastmod>2024-11-13T15:24:45+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>https://fava.be/shop/no-business-cards/</loc>
-        <lastmod>2024-10-12T09:37:12+00:00</lastmod>
+        <lastmod>2024-11-13T15:24:45+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>https://fava.be/shop/peirt/</loc>
-        <lastmod>2024-10-12T09:37:12+00:00</lastmod>
+        <lastmod>2024-11-13T15:24:46+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>https://fava.be/shop/porcicorn/</loc>
-        <lastmod>2024-10-12T09:37:13+00:00</lastmod>
+        <lastmod>2024-11-13T15:24:46+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>https://fava.be/shop/smaajl/</loc>
-        <lastmod>2024-10-12T09:37:13+00:00</lastmod>
+        <lastmod>2024-11-13T15:24:47+00:00</lastmod>
         <priority>0.64</priority>
     </url>
 </urlset>
