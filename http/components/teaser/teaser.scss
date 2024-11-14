@@ -123,6 +123,13 @@
     text-wrap: balance;
   }
 
+  &__tags {
+    order: -1;
+    font-size: $h6-font-size;
+    text-transform: lowercase;
+    padding-block-end: 0.4rem;
+  }
+
   &__link {
     &::before {
       position: absolute;
