@@ -5,6 +5,10 @@
 
   & + & {
     margin-block-start: 12rem;
+
+    &--sequel {
+      margin-block-start: 0;
+    }
   }
 
   &--small {
@@ -47,7 +51,7 @@
     }
 
     .overview--tiny & {
-      grid-template-columns: repeat(auto-fill, minmax(clamp(12rem, 32vw, 18rem), 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(clamp(12rem, 32vw, 16rem), 1fr));
     }
   }
 
@@ -62,6 +66,10 @@
       display: flex;
       margin: 0;
       max-width: none;
+    }
+
+    &[hidden] {
+      display: none;
     }
 
     &--full {
