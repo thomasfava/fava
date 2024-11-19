@@ -114,6 +114,11 @@
         padding: 1.2rem;
       }
     }
+
+    &--contain img {
+      object-fit: contain;
+      padding: 1.2rem;
+    }
   }
 
   &__title {
