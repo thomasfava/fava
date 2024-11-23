@@ -39,6 +39,8 @@
       color: var(--fava-link-active);
       background-color: var(--fava-background-active);
       transform: translateY(0);
+      font-weight: 400;
+      letter-spacing: 0.02em;
 
       &:hover,
       &:focus {
