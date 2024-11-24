@@ -33,7 +33,7 @@
 
     &:hover,
     &[aria-current*="page"],
-    .main-navigation--active-trail & {
+    .main-navigation__item--active-trail & {
       border-color: currentColor;
       opacity: 1;
     }
