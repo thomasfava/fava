@@ -27,6 +27,40 @@
     border-block-end: thin solid var(--fava-border);
   }
 
+  &__title-link {
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+
+    svg {
+      @include transition(cosmetic);
+
+      margin-inline-start: auto;
+      margin-block-start: 0.9rem;
+      inline-size: clamp(0.7rem, 1.2vw, 0.9rem);
+      fill: var(--fava-decoration);
+
+      &:dir(rtl) {
+        scale: -1 1;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      svg {
+        fill: var(--fava-decoration-hover);
+
+        @media (prefers-reduced-motion: no-preference) {
+          transform: translateX(0.1rem);
+
+          &:dir(rtl) {
+            transform: translateX(-0.1rem);
+          }
+        }
+      }
+    }
+  }
+
   // <ul>
   &__items {
     @include reset-list;
