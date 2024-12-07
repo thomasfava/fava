@@ -4,12 +4,13 @@
   display: inline-flex;
   flex-wrap: wrap;
   align-items: baseline;
-  column-gap: 0.1em;
+  column-gap: 0.2em;
   margin-inline-end: 0.1em;
 
   // <svg>
   &__icon {
-    block-size: 1ex;
+    block-size: 1.2ex;
+    inline-size: auto;
 
     path {
       fill: none;
