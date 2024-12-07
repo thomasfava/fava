@@ -1,7 +1,7 @@
 @import "sass-essentials";
 
 .breadcrumb {
-  $breadcrumb-icons-size: 0.6rem;
+  $breadcrumb-icons-size: 0.5rem;
 
   width: 100%;
   font-size: $h6-font-size;
@@ -34,15 +34,16 @@
   }
 
   &__icon {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
     line-height: 0;
-    inline-size: $breadcrumb-icons-size;
-    block-size: $breadcrumb-icons-size;
     transform: translateY(-0.1rem);
-    margin-inline: 0.1rem;
+    margin-inline: 0.2rem;
 
     svg {
       fill: var(--fava-accent);
+      inline-size: $breadcrumb-icons-size;
+      block-size: $breadcrumb-icons-size;
 
       &:dir(rtl) {
         scale: -1 1;
