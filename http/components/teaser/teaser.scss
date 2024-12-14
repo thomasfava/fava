@@ -111,13 +111,15 @@
 
       .teaser--shop & {
         object-fit: contain;
-        padding: 1.2rem;
+        padding-block: 1.2rem;
+        padding-inline: 2.4rem;
       }
     }
 
     &--contain img {
       object-fit: contain;
-      padding: 1.2rem;
+      padding-block: 1.2rem;
+      padding-inline: 2.4rem;
     }
   }
 
