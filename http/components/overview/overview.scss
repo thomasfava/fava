@@ -40,6 +40,10 @@
       inline-size: clamp(0.7rem, 1.2vw, 0.9rem);
       fill: var(--fava-decoration);
 
+      @media screen and (forced-colors: active) {
+        fill: LinkText;
+      }
+
       &:dir(rtl) {
         scale: -1 1;
       }
@@ -56,6 +60,10 @@
           &:dir(rtl) {
             transform: translateX(-0.1rem);
           }
+        }
+
+        @media screen and (forced-colors: active) {
+          fill: LinkText;
         }
       }
     }

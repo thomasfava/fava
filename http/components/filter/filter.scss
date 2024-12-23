@@ -20,6 +20,12 @@
     border: thin solid var(--fava-border-interactive);
     font-weight: 300;
 
+    @media screen and (forced-colors: active) {
+      color: ButtonText;
+      background-color: ButtonFace;
+      border-color: ButtonBorder;
+    }
+
     &:hover,
     &:focus,
     &[aria-current*="page"] {

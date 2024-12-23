@@ -45,6 +45,10 @@
       inline-size: $breadcrumb-icons-size;
       block-size: $breadcrumb-icons-size;
 
+      @media screen and (forced-colors: active) {
+        fill: CanvasText;
+      }
+
       &:dir(rtl) {
         scale: -1 1;
       }

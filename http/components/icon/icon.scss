@@ -20,5 +20,9 @@
     @supports(--css: variables) {
       fill: url(#gradient-vertical) var(--fava-icon);
     }
+
+    @media screen and (forced-colors: active) {
+      fill: LinkText;
+    }
   }
 }

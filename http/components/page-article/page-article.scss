@@ -116,6 +116,10 @@
     list-style-type: '';
     padding-inline-start: 1.8rem;
 
+    @media screen and (forced-colors: active) {
+      list-style-type: initial;
+    }
+
     li {
       position: relative;
 
@@ -128,6 +132,10 @@
         inline-size: 0.5rem;
         block-size: 0.5rem;
         border-radius: 50%;
+
+        @media screen and (forced-colors: active) {
+          content: none;
+        }
       }
     }
   }
