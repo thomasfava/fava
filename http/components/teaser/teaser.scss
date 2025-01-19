@@ -200,7 +200,7 @@
     // Focus with a keyboard
     a:focus-visible {
       &::before {
-        outline: 0.2rem solid currentColor;
+        outline: 0.2rem solid var(--fava-focus-outline, currentColor);
         outline-offset: 0.6rem;
       }
     }
