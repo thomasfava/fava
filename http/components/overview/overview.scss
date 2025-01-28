@@ -103,7 +103,7 @@
     flex-direction: column;
     margin: 0 1.2rem 2.4rem;
     max-inline-size: 22rem;
-    transform-origin: top;
+    transform-origin: center;
 
     @supports (display: grid) {
       display: flex;
@@ -116,7 +116,6 @@
         animation: item-reveal $easeInOutCubic forwards;
         animation-timeline: view();
         animation-range-start: cover;
-        animation-range-end: 18vh;
       }
     }
 
@@ -131,15 +130,23 @@
   }
 
   @keyframes item-reveal {
-    from {
-      translate: 0 clamp(1.2rem, 2vh, 1.6rem);
+    0% {
+      translate: 0 1.6rem;
       opacity: 0.8;
       scale: 0.98;
     }
-    to {
+
+    12%,
+    88% {
       translate: 0;
       opacity: 1;
       scale: 1;
+    }
+
+    100% {
+      translate: 0 -1.6rem;
+      opacity: 0.8;
+      scale: 0.98;
     }
   }
 }

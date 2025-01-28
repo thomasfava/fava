@@ -35,10 +35,9 @@
 
     @supports (animation-timeline: view()) {
       @media (prefers-reduced-motion: no-preference) {
-        animation: item-reveal $easeInOutCubic forwards;
+        animation: track-reveal $easeInOutCubic forwards;
         animation-timeline: view();
         animation-range-start: cover;
-        animation-range-end: 8vh;
       }
     }
   }
@@ -78,14 +77,21 @@
     font-size: $base-font-size-smaller;
   }
 
-  @keyframes item-reveal {
-    from {
-      translate: 0 clamp(0.8rem, 1vh, 1.2rem);
+  @keyframes track-reveal {
+    0% {
+      translate: 0 1.2rem;
       opacity: 0.8;
     }
-    to {
+
+    6%,
+    94% {
       translate: 0;
       opacity: 1;
+    }
+
+    100% {
+      translate: 0 -1.2rem;
+      opacity: 0.8;
     }
   }
 }
