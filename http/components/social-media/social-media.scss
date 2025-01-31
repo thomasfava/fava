@@ -16,6 +16,16 @@
   // Children
   &__item {
     display: inline-block;
+    transform-origin: center;
+
+    @supports (animation-timeline: view()) {
+      @media (prefers-reduced-motion: no-preference) {
+        animation: social-reveal $easeInOutCubic forwards;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 12vh;
+      }
+    }
   }
 
   &__link {
@@ -63,5 +73,19 @@
   .icon {
     block-size: $icon-size;
     inline-size: $icon-size;
+  }
+
+  @keyframes social-reveal {
+    from {
+      opacity: 0.8;
+      scale: 1.2;
+      filter: blur(2px);
+    }
+
+    to {
+      opacity: 1;
+      scale: 1;
+      filter: blur(0);
+    }
   }
 }
