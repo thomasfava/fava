@@ -60,6 +60,7 @@ https://fava.be/taste/toastas/
 https://fava.be/code/
 https://fava.be/shop/
 https://fava.be/shop/animals/
+https://fava.be/shop/dev/
 https://fava.be/shop/fava/
 https://fava.be/shop/magnets/
 https://fava.be/shop/no-business-cards/
