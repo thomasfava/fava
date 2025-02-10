@@ -13,10 +13,19 @@
   text-wrap: balance;
   width: clamp(28vw, 64vw, 58rem);
 
+  @media (hover) and (prefers-reduced-motion: no-preference) {
+    &:has(.social-media__item:hover) > .social-media__item:not(:hover),
+    &:has(.social-media__item:focus-within) > .social-media__item:not(:focus-within) {
+      opacity: 0.8;
+      transform: scale(0.94);
+    }
+  }
+
   // Children
   &__item {
     display: inline-block;
     transform-origin: center;
+    transition: transform $transition-duration $easeInOutCubic, opacity $transition-duration-slow $easeInOutCubic;
 
     @supports (animation-timeline: view()) {
       @media (prefers-reduced-motion: no-preference) {

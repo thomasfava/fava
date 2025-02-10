@@ -5,11 +5,24 @@
 
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem clamp(1.2rem, 2vw, 1.6rem);
+  gap: 0.8rem clamp(0.8rem, 1.6vw, 1.2rem);
   margin-block: 2.4rem 1.2rem;
   font-size: $h6-font-size;
   text-transform: lowercase;
   line-height: $base-line-height-heading;
+
+  @media (hover) and (prefers-reduced-motion: no-preference) {
+    &:has(.filter__item:hover) > .filter__item:not(:hover),
+    &:has(.filter__item:focus-within) > .filter__item:not(:focus-within) {
+      opacity: 0.8;
+      transform: scale(0.94);
+    }
+  }
+
+  &__item {
+    transform-origin: center bottom;
+    transition: transform $transition-duration $easeInOutCubic, opacity $transition-duration-slow $easeInOutCubic;
+  }
 
   &__link {
     text-decoration: none;
@@ -39,7 +52,6 @@
         transform: translateY(0);
       }
     }
-
 
     &[aria-current*="page"] {
       color: var(--fava-link-active);
