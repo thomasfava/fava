@@ -2,7 +2,7 @@
 
 .social-media {
   // Variables
-  $icon-size: 1.8rem;
+  $icon-size: 2rem;
 
   // Declarations
   @include reset-list;
@@ -42,7 +42,7 @@
 
     position: relative;
     display: block;
-    padding: clamp(0.2rem, 1vw, 0.8rem);
+    padding: clamp(0.4rem, 1vw, 0.8rem);
     border-radius: 50%;
 
     > * {
