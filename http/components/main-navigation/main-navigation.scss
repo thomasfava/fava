@@ -22,20 +22,24 @@
   &__link {
     @include link(inverse);
 
+    text-decoration-thickness: .08rem;
+    text-underline-offset: .3rem;
     font-weight: 500;
-    text-decoration-color: transparent;
-    border-block-end: thin solid transparent;
     opacity: 0.9;
 
     &:focus {
       opacity: 1;
     }
 
+    &, &:active {
+      text-decoration-color: transparent;
+    }
+
     &:hover,
     &[aria-current*="page"],
     .main-navigation__item--active-trail & {
-      border-color: currentColor;
       opacity: 1;
+      text-decoration-color: currentColor;
     }
   }
 }
