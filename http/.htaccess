@@ -3,6 +3,11 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https
 SetEnvIf X-Forwarded-Proto "https" HTTPS=on
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+Redirect 301 /code/ https://www.thomasdevriese.be/
+Redirect 301 /shop/smaajl/ /shop/
+Redirect 301 /shop/peirt/ /shop/
+Redirect 301 /shop/no-business-cards/ /shop/
+Redirect 301 /shop/dev/ /shop/
 Redirect 301 /shop/butterfly/ /shop/animals/
 Redirect 301 /taste/aymonaise/ https://www.knaptand.be/nl/recepten/aymonaise/
 Redirect 301 /taste/creme-quarantraise/ https://www.knaptand.be/nl/recepten/creme-quarantraise/
